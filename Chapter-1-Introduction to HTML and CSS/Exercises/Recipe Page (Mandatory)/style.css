@@ -1,0 +1,433 @@
+* { 
+    box-sizing: border-box;
+    /* Tells the browser to use the border and padding in the element's total height and width. Used to maintain consistency in layouts. */
+    margin: 0;
+    /* Sets the margins of all elements to 0, removing any default spacing OUTSIDE an element. */
+    padding: 0;
+    /* Sets the padding of all elements to 0, removing any default spacing INSIDE an element. */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+    /* Used to set the Font family for all text in the page. */
+  }
+  /* "*" is used to ensure that every element in the CSS file is affected. */
+
+  nav {
+    height: 80px;
+    /* Sets the height of the navigation bar to 80 pixels. */
+    background: #fdcc04;
+    /* Changes the background color to #fdcc04 */
+    display: flex;
+    /* Uses a flexbox layout for the elements in the navigation bar. */
+    justify-content: space-between;
+    /* Aligns the items along the main axis with spaces between them. */
+    align-items: center;
+    /* Align the items to center vertically. */
+    padding: 0rem calc((100vw - 1300px) / 2);
+    /* Sets the top and bottom padding to 0 whilst calculating the left and right sides to center the content horizontally.*/
+  }
+  /* CSS styling only affects sections with the "nav" tag in the HTML sheet. */
+
+  .nav a {
+    text-decoration: none;
+    /* Uses no text-decoration setting. */
+    color: #000;
+    /* Sets the text color to black or #000. */
+    font-weight: bold;
+    /* Sets the font weight to bold. */
+    padding: 0 1.5rem;
+    /* Sets the padding for the top and bottom of the element to be 0 while the left and right sides of the element is set to 1.5rem. */
+  }
+  /* CSS styling only affects sections with the "<a>" element and "nav" tag in the HTML sheet. */
+
+ .nav a:hover {
+    color: #fff;
+  }
+  /* Creates a hover animation whenever the user hovers over the navigation bar. */
+
+  .banner {
+    width: 100%;
+    /* Sets the width of the image. */
+    height: 100vh;
+    /* Set the height of the image. */
+    background-image:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(Images/beefwellington.png); 
+    /* Uses a linear gradient to change the transparency of the image, uses beefwellington.png as the image. */
+    background-size: cover;
+    /* Used to ensure the image covers the background. */
+    background-position: center;
+    /* Used to ensure the background image is centered. */
+}
+  /* CSS styling only affects sections with the "banner" class. */
+
+  .logo {
+    color: #000;
+    /* Sets the color of the logo to black or #000. */
+    font-size: 1.5rem;
+    /* Sets the font size to be 1.5rem. */
+    font-weight: bold;
+    /* Sets the font weight to be bold. */
+    font-style: italic;
+    /* Sets the font to be italic. */
+    padding: 0 2rem;
+    /* Sets the padding for the top and bottom to 0 and the padding for left and right to be 2rem. */
+  }
+  
+   /* CSS styling only affects sections with the "logo" classes and tags. */
+
+  .header{
+    width: 100%;
+    /* Sets the header width to be 100% of its size.*/
+    position: absolute;
+    /* Positions the header to be absolute, e.g. fixed.*/
+    top: 50%;
+    /* Moves the top of the header at the vertical center of its contained element. */
+    transform: translateY(-50%);
+    /* Aligns the header up to 50% of its own height, centering it veritcally with its contained element. */
+    text-align: center;
+    /* Centers the text towards the header. */
+    color: #fff;
+    /* Sets the color of the header to white. */
+}
+.header h1{
+    font-size: 60px;
+    /* Sets the font size of the header to 60px */
+    margin-top: 80px;
+    /* Sets the top margine to be 80px. */
+}
+  /* CSS styling only affects sections with "header" and <h1> classes and elements. */
+
+.header p{
+    margin: 20px auto;
+    /* Sets the margin to 20px to the top and bottom margins and the browser will automatically set the left and right margins.*/
+    font-weight:100;
+    /* Sets the font weight to be 100. */
+    line-height: 35px;
+    /* Sets the line-height to be 35 pixels. */
+}
+ /* CSS styling only affects sections with "header" and <p> classes and elements. */
+
+.description{
+  width: 100%;
+  /* Sets the width to 100%. */
+  max-width: 1170px;
+  /* Sets the max width to be 1170 pixels. */
+  display: grid;
+  /* Uses the "grid" display layout. */
+  grid-template-columns: repeat(2,1fr);
+  /* Sets the grids to have 2 columns. */
+  grid-gap: 60px;
+  /* Sets the grid gap to 60 pixels. */
+  overflow-x: hidden;
+  /* Hides any overflowing content. */
+  padding: 3rem 0;
+  /* Sets the padding to 3rem to top and bottom and 0 to left and right. */
+}
+ /* CSS styling only affects sections with "description" tag.  */
+
+.description .imgBox {
+  overflow: hidden;
+   /* Hides any overflowing content. */
+}
+ /* CSS styling only affects sections with "description" and "imgBox" classes and tags. */
+
+.description .imgBox img{
+  width: 100%;
+  /* Sets the width to 100%. */
+  height: 100;
+  /* Sets the height to 100%. */
+  object-fit: cover;
+  /* Scales the image inside the cover container. */
+  transition: 0.3s;
+  /* Gives a transition effect that lasts 0.3 seconds. */
+  padding-left: 50px;
+  /* Sets the left padding to 50 pixels. */
+
+}
+  /* CSS styling only affects sections with "description", "imgBox", and "img" classes and tags. */
+
+.description .imgBox:hover img{
+  transform: scale(1.25);
+  /* Scales the image to 1.25x it's size when the user hovers. */
+}
+/* CSS styling only affects sections with "description" and "imgBox" classes and tags. */
+
+.description .contentBox {
+  width: 100%;
+  /* Sets the width to 100%. */
+  display: flex;
+  /* Sets the display layout to "flex-box". */
+  justify-content: center;
+  /* Aligns the content to be horizontally centered. */
+  align-items: center;
+  /* Aligns the items to be centered. */
+  padding-left: 30px;
+  /* Sets the left padding to 30 pixels. */
+}
+/* CSS styling only affects sections with "description" and "contentBox" classes and tags. */
+
+.description .contentBox span.textBox{ 
+  display: block;
+  /* Uses the "block" display layout. */
+  font-size: 20px;
+  /* Sets the font size to 20 pixels. */
+  text-transform: capitalize;
+  /* Transforms the text to only be capitalized. */
+  display: flex;
+  /* Sets the display layout to "flex". */
+  justify-content: flex-start;
+  /* Aligns the content to be horizontally centered. */
+  align-items: center;
+  /* Aligns the items to be centered. */
+  gap: 15px;
+  /* Sets a 15pixel gap between the contents. */
+  margin-bottom: 20px;
+  /* Sets a bottom margin to 20 pixels. */
+
+}
+/* CSS styling only affects sections with "description", "contentBox", and "textBox" classes and tags. */
+
+.description .contentBox span.textBox span{
+  display: inline-block; 
+  /* Sets the display layout to "inline-block". */
+  background: #fdcc04;
+  /* Sets the span element color to #fdcc04 */
+  width: 200px;
+  /* Sets the span width to 200 pixels. */
+  height: 5px;
+  /* Sets the span height to 5 pixels. */
+}
+/* CSS styling only affects sections with "description", "contentBox", "textBox", and <span> classes and tags. */
+
+.description .contentBox h2 {
+  font-size: 30px;
+  /* Sets the font size to be 30 pixels. */
+  font-weight: 700;
+  /* Sets the font weight to be 700 pixels. */
+  text-align: center;
+  /* Aligns the text to be centered. */
+  color: #000000;
+  /* Sets the font color to be #000 or black. */
+  padding-bottom: 20px;
+  /* Sets a bottom padding to 20 pixels. */
+}
+/* CSS styling only affects sections with "description", "contentBox", and <h2> classes and tags. */
+
+.description .contentBox p {
+  font-size: 14px;
+  /* Sets the font size to 14 pixels. */
+  line-height: 25px;
+  /* Sets the line-height to 25 pixels. */
+  text-align: justify;
+  /* Aligns the text to be in a justified format. */
+  padding-bottom: 25px;
+  /* Sets the bottom padding to 25 pixels. */
+}
+/* CSS styling only affects sections with "description", "contentBox", and <p> classes and tags. */
+
+.description .contentBox a {
+  display: inline-block;
+  /* Sets the display layout to be "inline-block". */
+  text-decoration: none;
+  /* Sets the text-decoration to a none value. */
+  text-transform: uppercase;
+  /* Transforms the text to only be uppercase. */
+  background: #741b04;
+  /* Sets the background color of the button to be #741b04. */
+  color: #fff; 
+  /* Sets the text color of the button to be #fff or white. */
+  padding: 15px 40px;
+  /* Sets the padding of the top and bottom to 15 pixels and sets the left and right padding to 40 pixels. (Shape of the button) */
+  letter-spacing: 1px;
+  /* Spaces the letters to be 1 pixel. */
+  user-select: none;
+}
+/* CSS styling only affects sections with "description", "contentBox", and <a> classes and tags. */
+
+.ingredients {
+  width: 100%;
+  /* Sets the width to 100% */
+  max-width: 1920px;
+  /* Sets the max width to only be 1920 pixels. */
+  display:grid;
+  /* Sets the display layout to be "grid".*/
+  grid-template-columns: repeat(2, 1fr);
+  /* Sets the grid to have 2 columns. */
+  grid-gap: 100px;
+  /* Sets the gaps of the grid to be 100 pixels. */
+  overflow-x: hidden;
+  /* Hides any overflowing content. */
+  padding: 0 5rem;
+  /* Sets the bottom and top padding to 0 whilst the left and right padding to 5 rem. */
+}
+/* CSS styling only affects sections with the "ingredients" classes and tag. */
+
+.ingredients .imgBox {
+  overflow: hidden;
+   /* Hides any overflowing content. */
+  order: 2; 
+  /* Changes the order of the grid. */
+}
+/* CSS styling only affects sections with the "ingredients" and "imgBox" classes and tags. */
+
+.ingredients .imgBox img {
+  width: 125%;
+  /* Sets the width of the image to be 125% of its original size. */
+  height: 95%;
+  /* Sets the height of the image to be 95% of its original size. */
+  object-fit: cover;
+  /* Ensures the object is resized to cover the container. */
+  transition: 0.3s;
+  /* Sets a transition effect that lasts for 0.3s. */
+  padding-top: 3rem;
+  /* Sets the top padding to 3rem. */
+}
+/* CSS styling only affects sections with the "ingredients", "imgBox", and <img> classes and tags. */
+
+.ingredients .imgBox:hover img {
+  transform: scale(1.25);
+  /* Sets an animation that scales the image to 1.25x of its original size. */
+}
+
+.ingredients .contentBox {
+  width: 100%;
+  /* Sets the width to 100%. */
+  display: flex;
+  /* Sets the display layout to "flex". */
+  justify-content: center;
+  /* Aligns the content to be centered horizontally. */
+  align-items: center;
+}
+/* CSS styling only affects sections with the "ingredients" and "contentBox" classes and tags. */
+
+.ingredients .contentBox span.textBox {
+  display: block;
+  /* Sets the display layout to "block". */
+  font-size: 20px;
+  /* Sets the font-size to 20 pixels. */
+  text-transform: capitalize;
+  /* Transforms the text to be capitalized. */
+  justify-content:center;
+  /* Aligns the content to be centered horizontally. */
+  align-items: center;
+  /* Aligns the items to be centered. */
+  gap: 15px;
+  /* Sets a 15px gap between the elements. */
+  margin-bottom: 20px;
+  /* Sets a bottom margin of 20 pixels. */
+}
+/* CSS styling only affects sections with the "ingredients", "span" and "contentBox" classes and tags. */
+
+.ingredients .contentBox span.textBox span {
+  display: inline-block;
+  /* Sets the display layout to be "inline-block". */
+  background: #fdcc04;
+  /* Sets the span color to be #fdcc04. */
+  width: 150px;
+  /* Sets the span width to be 150 pixels.*/
+  height: 5px;
+  /* Sets the span height to 5 pixels. */
+}
+/* CSS styling only affects sections with the "ingredients", "span" and "textBox" classes and tags. */
+
+.ingredients .contentBox h2 {
+  font-size: 30px; 
+  /* Sets the font size of the heading to 30 pixels. */
+  font-weight: 700; 
+  /* Sets the font weight to bold. */
+  text-align: center; 
+  /* Aligns the text to the center. */
+  color: #000000; 
+  /* Sets the text color to black. */
+  padding-bottom: 20px; 
+  /* Adds padding at the bottom. */
+}
+/* CSS styling only affects sections with the "ingredients" class and "contentBox" h2 tag. */
+
+.ingredients .contentBox p {
+  font-size: 14px; 
+  /* Sets the font size to 14 pixels. */
+  line-height: 25px; 
+  /* Sets the line height to 25 pixels. */
+  text-align: justify; 
+  /* Justifies the text. */
+  padding-bottom: 25px; 
+  /* Adds padding at the bottom. */
+}
+/* CSS styling only affects sections with the "ingredients" class and "contentBox" p tag. */
+
+.methods {
+  width: 100%; 
+  /* Sets the width to 100%. */
+  max-width: 1920px;
+  /* Sets the width to 1920px. */
+  display:block;
+  /* Uses Block as its display layout. */
+  overflow-x: hidden; 
+  /* Hides horizontal overflow. */
+  padding: 0 5rem;
+  /* Sets padding for left and right to 5 rem.*/
+  padding-top: 5rem; 
+  /* Adds 5 rem for the Padding at the top. */
+}
+/* CSS styling only affects sections with the "methods" class. */
+
+.methods .contentBox {
+  width: 100%; 
+  /* Sets width to 100% */
+  max-width: 1920px; 
+  /* Maximum width set to 1920 pixels. */
+  display: block; 
+  /* Sets the display layout to "block". */
+  justify-content: center; 
+  /* Centers the content horizontally. */
+  align-items: center; 
+  /* Centers the items vertically. */
+}
+/* CSS styling only affects sections with the "methods" class and "contentBox" class. */
+
+.methods .contentBox h2 {
+  font-size: 30px; 
+  /* Sets the font size to 30 pixels. */
+  font-weight: 700; 
+  /* Sets the font weight  to 700 pixels. */
+  text-align: center; 
+  /* Centers the text. */
+  color: #000000; 
+  /* Sets the text color to #000 or black. */
+  padding-bottom: 20px; 
+  /* Adds 20 pixels of Padding at the bottom */
+}
+/* CSS styling only affects sections with the "methods" class and "contentBox" h2 tag. */
+
+.methods .contentBox p {
+  font-size: 14px; 
+  /* Sets font size to 14 pixels. */
+  line-height: 25px; 
+  /* Sets the line height to 25 pixels. */
+  text-align: justify; 
+  /* Justifies the text. */
+  justify-content: center; 
+  /* Centers the content horizontally. */
+  padding-bottom: 25px; 
+  /* Adds 25 pixels of Padding at the bottom. */
+}
+/* CSS styling only affects sections with the "methods" class and "contentBox" p tag. */
+
+.methods .contentBox a {
+  display: inline-block; 
+  /* Sets the displasy layout to an Inline-block element */
+  text-decoration: none; 
+  /* Sets no text-decorations. */
+  text-transform: uppercase; 
+  /* Uppercases text */
+  background: #741b04; 
+  /* Sets Background color to #741b04.*/
+  color: #fff; 
+  /* Sets text color to #fff or white. */
+  padding: 15px 40px; 
+  /* Adds 15px to top and bottom padding and 40 pixels to left and right padding. */
+  letter-spacing: 1px; 
+  /* Sets letter spacing to be 1 pixel. */
+  user-select: none; 
+  /* Disables text selection. */
+}
+/* CSS styling only affects sections with the "methods" class and "contentBox" a tag. */

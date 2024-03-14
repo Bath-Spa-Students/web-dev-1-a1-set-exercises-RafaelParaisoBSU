@@ -162,7 +162,7 @@ body p{
     border-radius: 30px;
     background: yellow;
     display: flex;
-    margin-top: 30%;
+    margin-top: 35%;
     width: 220px;
 }
 
@@ -175,7 +175,7 @@ body p{
     border-radius: 30px;
     background: red;
     display: flex;
-    margin-top: 30%;
+    margin-top: 35%;
     transition: 0.5s;
 }
 

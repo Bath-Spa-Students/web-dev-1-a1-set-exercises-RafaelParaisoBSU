@@ -46,7 +46,7 @@ nav {
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 40px;
     font-weight: lighter;
     padding: 0px 20px
 }
@@ -92,45 +92,49 @@ body {
 .Home h1{
     display: flex;
     letter-spacing: 5px;
-    font-size: 65px;
+    font-size: 82px;
     position: absolute;
     top: 25%;
     transform: translateY(-50%);
     text-align: left;
-    color: yellow;
+    color: goldenrod;
+    border-bottom: 5px solid  gold;
+    text-shadow: 5px 5px black;
         
 }
 
 .Home h2{
     display: flex;
-    font-size: 24px;
+    font-size: 28px;
     position: absolute;
-    top: 30%;
+    top: 35%;
     transform: translateY(-50%);
     color: #fff;
-    
+    text-shadow: 2px 2px black;
 }
 
 .Home h4{
     display: flex;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
     position: absolute;
-    top: 35%;
+    top: 40%;
     transform: translateY(-50%);
     text-align: left;
     color: #fff;
-  
+    text-shadow: 2px 2px black;
 }
 
 body p{
     display: flex;
     font-size: 24px;
     position: absolute;
-    top: 40%;
+    top: 45%;
     transform: translateY(-50%);
     text-align: left;
     color: #fff;
+    margin-bottom: 1;
+    text-shadow: 2px 2px black;
     
 }
 
@@ -146,6 +150,7 @@ body p{
     z-index: -1;
     border-radius: 5%;
     border: 5px solid black; 
+    text-shadow: 10px 10px black;
 }
 
 .Home .container a{
@@ -157,7 +162,7 @@ body p{
     border-radius: 30px;
     background: yellow;
     display: flex;
-    margin-top: 28%;
+    margin-top: 30%;
     width: 220px;
 }
 
@@ -170,7 +175,7 @@ body p{
     border-radius: 30px;
     background: red;
     display: flex;
-    margin-top: 28%;
+    margin-top: 30%;
     transition: 0.5s;
 }
 
@@ -178,6 +183,7 @@ body p{
     position: relative; 
     margin-top: 30%; 
     text-align: center;
+    margin-bottom: 15%;
 }
 
 .Plot h1 {
@@ -190,6 +196,9 @@ body p{
     margin-bottom: 12%; 
     margin-left: 42%;
     color: goldenrod;
+    border-bottom: 5px solid goldenrod;
+    text-shadow: 5px 5px black;
+    background-color: black;
 }
 
 .Plot p {
@@ -197,10 +206,11 @@ body p{
     text-align: justify;
     margin-right: 8%;
     margin-top: 5%;
-    margin-bottom: 20%;
+    margin-bottom: 15%;
     font-size: 32px;
     padding: 20px;
     border: 5px solid goldenrod;
+    background-color: black;
 }
 
 
@@ -218,6 +228,9 @@ body p{
     position: relative; 
     margin-bottom: -5%; 
     color: goldenrod;
+    border: 5px solid goldenrod;
+    text-shadow: 5px 5px black;
+    background-color: black;
 }
 
 .Cast h3 {
@@ -236,7 +249,7 @@ body p{
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 40px;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 }
 
 .card {
@@ -296,7 +309,7 @@ body p{
 
 .Reviews {
     position: relative; 
-    margin-top: 20%; 
+    margin-top: 10%; 
     margin-bottom: 10%;
     text-align: center;
 }
@@ -310,13 +323,19 @@ body p{
     margin-bottom: 12%; 
     margin-left: 42%;
     color: goldenrod;
+    border: 5px solid goldenrod;
+    text-shadow: 5px 5px black;
+    background-color: black;
 }
 
 .Reviews h2 {
-    bottom:150px;
+    bottom:120px;
     font-weight: bolder;
     font-size: 60px;
     justify-content: center;
+    border-bottom: 5px solid goldenrod;
+    text-shadow: 5px 5px black;
+    background-color: black;
 }
 
 .Reviews  h4 {
@@ -327,7 +346,11 @@ body p{
     margin-top: 5%;
     margin-bottom: 20%;
     font-size: 32px;
+    padding: 2%;
     border: 5px solid goldenrod;
+    text-shadow: 5px 5px black;
+    border: 5px solid goldenrod;
+    background-color: black;
 }
 
 .Reviews .profile-container1 {
@@ -337,7 +360,7 @@ body p{
     height: 400px;
     background-color: #333333;
     position: absolute;
-    top: 20%;
+    top: 15%;
     right:8%;
     border-radius: 5%;
     border: 5px solid black; 
@@ -355,7 +378,7 @@ body p{
     right:8%;
     border-radius: 5%;
     border: 5px solid black; 
-    margin-top: 19%;
+    margin-top: 18%;
 }
 
 .Reviews .profile-container3 {
@@ -370,4 +393,11 @@ body p{
     border-radius: 5%;
     border: 5px solid black; 
     margin-top: 42%;
+}
+
+footer {
+    text-align: center;
+    font-size: 24px;
+    background-color: black;
+    color:white;
 }

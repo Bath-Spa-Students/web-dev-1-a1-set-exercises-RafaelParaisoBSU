@@ -1,0 +1,410 @@
+* { 
+    box-sizing: border-box;
+    /* Tells the browser to use the border and padding in the element's total height and width. Used to maintain consistency in layouts. */
+    margin: 0;
+    /* Sets the margins of all elements to 0, removing any default spacing OUTSIDE an element. */
+    padding: 0;
+    /* Sets the padding of all elements to 0, removing any default spacing INSIDE an element. */
+    font-family: 'Bebas Neue','Roboto', 'Montserrat', 'Lato',sans-serif;
+
+  }
+
+h1, h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    display: flex;
+    letter-spacing: 5px;
+    font-size: 65px;
+    transform: translateY(-50%);
+    color: yellow;
+}
+
+p {
+    font-family: 'Roboto';
+}
+
+h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    padding: 1% 8%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background:#000000;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+    border-bottom: 10px solid goldenrod;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: lighter;
+    padding: 0px 20px
+}
+
+.nav-links a:hover {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight:lighter;
+    background-color: yellow;
+    border: 20px 10px solid yellow; 
+    padding: 10px 20px;
+    transition: background-color 0.5s ease-in-out;
+    border-radius: 5px;
+}
+
+.logo {
+    font-family: 'Arial Black', sans-serif;
+    text-align: right;
+    font-weight:bolder;
+    font-size: 34px;
+    background-color: yellow;
+    border: 1px solid yellow; 
+    padding: 5px 10px; 
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 80%; 
+    max-width: 1200px; 
+    margin: 0 160px; 
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: #444444; 
+}
+
+.Home {
+    margin-top: -1%;
+    margin-bottom: 10px;
+}
+
+.Home h1{
+    display: flex;
+    letter-spacing: 5px;
+    font-size: 82px;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: goldenrod;
+    border-bottom: 5px solid  gold;
+    text-shadow: 5px 5px black;
+        
+}
+
+.Home h2{
+    display: flex;
+    font-size: 28px;
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    color: #fff;
+    text-shadow: 2px 2px black;
+}
+
+.Home h4{
+    display: flex;
+    font-size: 26px;
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: #fff;
+    text-shadow: 2px 2px black;
+}
+
+body p{
+    display: flex;
+    font-size: 24px;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: #fff;
+    margin-bottom: 1;
+    text-shadow: 2px 2px black;
+    
+}
+
+.Home .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 62%;
+    height: 700px;
+    background-color: #333333;
+    position: absolute;
+    top: 20%;
+    right:8%;
+    z-index: -1;
+    border-radius: 5%;
+    border: 5px solid black; 
+    text-shadow: 10px 10px black;
+}
+
+.Home .container a{
+    color: black;
+    font-size: 32px;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 18px 50px;
+    border-radius: 30px;
+    background: yellow;
+    display: flex;
+    margin-top: 40%;
+    margin-bottom: 30%;
+    width: 220px;
+}
+
+.Home .container a:hover{
+    color: white;
+    font-size: 32px;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 18px 50px;
+    border-radius: 30px;
+    background: red;
+    display: flex;
+    margin-top: 40%;
+    margin-bottom: 30%;
+    transition: 0.5s;
+}
+
+.Plot {
+    position: relative; 
+    margin-top: 13.6%; 
+    text-align: center;
+    margin-bottom: 15%;
+}
+
+.Plot h1 {
+    display: flex;
+    font-size: 100px; 
+    border: 2px black;
+    font-weight: bolder;
+    justify-content: center;
+    position: relative; 
+    margin-bottom: 12%; 
+    margin-left: 42%;
+    color: goldenrod;
+    border-bottom: 5px solid goldenrod;
+    text-shadow: 5px 5px black;
+    background-color: black;
+}
+
+.Plot p {
+    font-weight: normal;
+    text-align: justify;
+    margin-right: 8%;
+    margin-top: 5%;
+    margin-bottom: 14%;
+    font-size: 32px;
+    padding: 20px;
+    border: 5px solid goldenrod;
+    background-color: black;
+}
+
+
+.Cast {
+    position: relative; 
+    margin-top: 3%; 
+    text-align: center;
+}
+
+.Cast h1 {
+    font-size: 100px; 
+    border: 2px black;
+    font-weight: bolder;
+    justify-content: center;
+    position: relative; 
+    margin-bottom: -5%; 
+    color: goldenrod;
+    border: 5px solid goldenrod;
+    text-shadow: 5px 5px black;
+    background-color: black;
+}
+
+.Cast h3 {
+    font-size: 100px; 
+    border: 2px black;
+    font-weight: bolder;
+    justify-content: center;
+    position: relative; 
+    margin-top: 5%;
+    margin-bottom: -5%; 
+    color: black;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 10%;
+}
+
+.card {
+    width: 325px;
+    background-color: #f0f0f0;
+    border: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+    border: solid black 2px;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-content h3{
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.card-content p{
+    color:#666;
+    margin: 5% 0; 
+    font-size: 18px; 
+}
+
+.card-content .btn{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: yellow;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: black;
+    font-size: 30px;
+    border: solid black 2px;
+}
+
+.card-content .btn:hover{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color:red;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: white;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.Reviews {
+    position: relative; 
+    margin-top: 10%; 
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.Reviews h1 {
+    display: flex;
+    font-size: 100px; 
+    font-weight: bolder;
+    justify-content: center;
+    position: relative; 
+    margin-bottom: 12%; 
+    margin-left: 42%;
+    color: goldenrod;
+    border: 5px solid goldenrod;
+    text-shadow: 5px 5px black;
+    background-color: black;
+}
+
+.Reviews h2 {
+    bottom:120px;
+    font-weight: bolder;
+    font-size: 60px;
+    justify-content: center;
+    border-bottom: 5px solid goldenrod;
+    text-shadow: 5px 5px black;
+    background-color: black;
+}
+
+.Reviews  h4 {
+    width: 100%;
+    font-weight: normal;
+    text-align: justify;
+    margin-right: 8%;
+    margin-top: 5%;
+    margin-bottom: 20%;
+    font-size: 32px;
+    padding: 2%;
+    border: 5px solid goldenrod;
+    text-shadow: 5px 5px black;
+    border: 5px solid goldenrod;
+    background-color: black;
+}
+
+.Reviews .profile-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    height: 400px;
+    background-color: #333333;
+    position: absolute;
+    top: 15%;
+    right:8%;
+    border-radius: 5%;
+    border: 5px solid black; 
+    margin-top: -5%;
+}
+
+.Reviews .profile-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    height: 400px;
+    background-color: #333333;
+    position: absolute;
+    top: 20%;
+    right:8%;
+    border-radius: 5%;
+    border: 5px solid black; 
+    margin-top: 18%;
+}
+
+.Reviews .profile-container3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    height: 400px;
+    background-color: #333333;
+    position: absolute;
+    top: 20%;
+    right:8%;
+    border-radius: 5%;
+    border: 5px solid black; 
+    margin-top: 42%;
+}
+
+footer {
+    text-align: center;
+    font-size: 24px;
+    background-color: black;
+    color:white;
+}

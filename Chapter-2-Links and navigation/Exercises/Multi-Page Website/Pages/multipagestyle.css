@@ -1,410 +1,667 @@
-* { 
+/* ---Glossary--- */
+
+/* Each property has been defined in the glossary for ease of access for the reader. (I also used it to properly reference my comments.) */
+
+/* ---Text Related Styling--- */
+/* text-family: Specifies which font or fonts to be used. */
+/* font-size: Changes the font size. */
+/* font-weight: Specifies a text's character thickness. */
+/* letter-spacing: Used to edit the distance between letters. */
+/* text-decoration: Defines whether text can have any decoration, e.g. underlines. */
+/* text-align: Adjusts the text's horizontal alignment, can be justified, centered, left, or right. */
+/* text-shadow: Used to give the text a shadow. */
+
+/* ---Padding and Margin--- */
+/* padding: Used to change an element's inner padding. */
+/* margin: Used to change the area surrounding an element. */
+
+/* ---Position Styling--- */
+/* position: Indicates how an element is to be positioned. */
+/* Z-index: Using z-index will determine the order of how a positioned element stacks. */
+
+/* ---Color-Related Styling--- */
+/* color: Used to sets the text's color. */
+/* background-color: Adjusts an element's background color. */
+
+/* ---Border Styling--- */
+/* border: Creates a border surrounding the element. */
+/* border-radius: Rounds off the corners of the border. */
+/* box-shadow: Using this produces shadows surrounding the border of the element. */
+
+/* ---Box Model--- */
+/* display: Used to how an element will appear on screen. */
+/* width, max-width, height: This determines an element's width and height. */
+/* overflow: Defines what happens when content overflows an element's box to the brim. */
+/* box-sizing: This defines how an element's height and width are assigned. */
+
+/* ---Flexbox Styling--- */
+/* flex-direction: Flex-direction specifies the direction of the main axis of the flex container. */
+/* justify-content: This sets flex elements to align with the flex container's main axis. */
+/* align-items: This aligns flex items with the flex container's cross axis. */
+/* flex-wrap: Indicates whether or not flex objects need to be wrapped. */
+
+/* ---Transitions and Transformations--- */
+/* transition: This indicates how CSS properties will transition. */
+/* transform: Allows an element to change such as scaling, rotation, etc. */
+
+
+/* Common styles */
+* {
     box-sizing: border-box;
-    /* Tells the browser to use the border and padding in the element's total height and width. Used to maintain consistency in layouts. */
+    /* Box-sizing is set to border-box so that padding and border are included in the element's total width and height. */
     margin: 0;
-    /* Sets the margins of all elements to 0, removing any default spacing OUTSIDE an element. */
+    /* Margin is set to 0 to remove any default margin. */
     padding: 0;
-    /* Sets the padding of all elements to 0, removing any default spacing INSIDE an element. */
-    font-family: 'Bebas Neue','Roboto', 'Montserrat', 'Lato',sans-serif;
+    /* Padding is set to 0 to remove any default padding. */
+    font-family: 'Bebas Neue', 'Roboto', 'Montserrat', 'Lato', sans-serif;
+    /* Font-family is set to provide a fallback font for different elements. */
+}
 
-  }
-
+/* Header styles */
 h1, h2 {
     font-family: 'Bebas Neue', sans-serif;
+    /* Specifies the font-family for h1 and h2 elements with a fallback font. */
     display: flex;
+    /* Makes the elements a flex container to control their layout. */
     letter-spacing: 5px;
+    /* Adjusts the distance between letters in the text. */
     font-size: 65px;
+    /* Sets the font size. */
     transform: translateY(-50%);
+    /* Moves the element vertically up by 50% of its own height. */
     color: yellow;
+    /* Sets the text color to yellow. */
 }
 
+/* Paragraph styles */
 p {
     font-family: 'Roboto';
+    /* Specifies the font-family for paragraphs. */
 }
 
-h3, h4 {
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    font-size: 24px;
-    font-weight: bold;
-    transform: translateY(-50%);
-    color: #fff;
-}
-
+/* Navigation styles */
 nav {
     display: flex;
+    /* Makes the navigation a flex container to control its layout. */
     padding: 1% 8%;
+    /* Sets padding for the navigation. */
     justify-content: space-between;
+    /* Distributes space evenly between flex items. */
     align-items: center;
+    /* Aligns items vertically in the center. */
     height: 100px;
-    background:#000000;
+    /* Sets the height of the navigation bar. */
+    background: #000000;
+    /* Sets the background color of the navigation bar. */
     position: sticky;
+    /* Makes the navigation bar stick to the top of the viewport. */
     top: 0%;
+    /* Positions the navigation bar at the top of the viewport. */
     z-index: 1;
+    /* Sets the stacking order of the navigation bar. */
     border-bottom: 10px solid goldenrod;
+    /* Adds a goldenrod border at the bottom. */
 }
+
 .nav-links a {
     color: white;
+    /* Sets the color of navigation links to white. */
     text-decoration: none;
+    /* Removes underline from links. */
     font-size: 40px;
+    /* Sets the font size of navigation links. */
     font-weight: lighter;
-    padding: 0px 20px
+    /* Sets the font weight to lighter. */
+    padding: 0px 20px;
+    /* Sets padding for navigation links. */
 }
 
 .nav-links a:hover {
-    display: inline-block;
     color: black;
-    text-decoration: none;
-    font-size: 40px;
-    font-weight:lighter;
+    /* Changes the text color on hover to black. */
     background-color: yellow;
-    border: 20px 10px solid yellow; 
+    /* Sets background color on hover to yellow. */
+    border: 20px 10px solid yellow;
+    /* Sets border properties on hover. */
     padding: 10px 20px;
+    /* Sets padding on hover. */
     transition: background-color 0.5s ease-in-out;
+    /* Adds transition effect on hover. */
     border-radius: 5px;
-}
-
-.logo {
-    font-family: 'Arial Black', sans-serif;
-    text-align: right;
-    font-weight:bolder;
-    font-size: 34px;
-    background-color: yellow;
-    border: 1px solid yellow; 
-    padding: 5px 10px; 
-    border-radius: 10px;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    width: 80%; 
-    max-width: 1200px; 
-    margin: 0 160px; 
-    padding: 10px; 
-    box-sizing: border-box; 
-}
-
-body {
-    background-color: #444444; 
-}
-
-.Home {
-    margin-top: -1%;
-    margin-bottom: 10px;
-}
-
-.Home h1{
-    display: flex;
-    letter-spacing: 5px;
-    font-size: 82px;
-    position: absolute;
-    top: 25%;
-    transform: translateY(-50%);
-    text-align: left;
-    color: goldenrod;
-    border-bottom: 5px solid  gold;
-    text-shadow: 5px 5px black;
-        
-}
-
-.Home h2{
-    display: flex;
-    font-size: 28px;
-    position: absolute;
-    top: 35%;
-    transform: translateY(-50%);
-    color: #fff;
-    text-shadow: 2px 2px black;
-}
-
-.Home h4{
-    display: flex;
-    font-size: 26px;
-    font-weight: bold;
-    position: absolute;
-    top: 40%;
-    transform: translateY(-50%);
-    text-align: left;
-    color: #fff;
-    text-shadow: 2px 2px black;
-}
-
-body p{
-    display: flex;
-    font-size: 24px;
-    position: absolute;
-    top: 45%;
-    transform: translateY(-50%);
-    text-align: left;
-    color: #fff;
-    margin-bottom: 1;
-    text-shadow: 2px 2px black;
+    /* Adds border radius on hover. */
     
 }
 
-.Home .image-container {
+/* Logo styles */
+.logo {
+    font-family: 'Arial Black', sans-serif;
+    /* Specifies the font-family for the logo with a fallback font. */
+    text-align: right;
+    /* Aligns the text to the right. */
+    font-weight: bolder;
+    /* Sets the font weight to bolder. */
+    font-size: 34px;
+    /* Sets the font size for the logo. */
+    background-color: yellow;
+    /* Sets the background color of the logo to yellow. */
+    border: 1px solid yellow;
+    /* Sets a border around the logo. */
+    padding: 5px 10px;
+    /* Sets padding for the logo. */
+    border-radius: 10px;
+    /* Adds border radius to the logo. */
+}
+
+/* Container styles */
+.container {
     display: flex;
-    flex-wrap: wrap;
-    width: 62%;
-    height: 700px;
-    background-color: #333333;
+    /* Makes the container a flex container to control its layout. */
+    flex-direction: column;
+    /* Arranges the children elements vertically. */
+    width: 80%;
+    /* Sets the width of the container. */
+    max-width: 1200px;
+    /* Sets the maximum width of the container. */
+    margin: 0 auto;
+    /* Centers the container horizontally. */
+    padding: 10px;
+    /* Sets padding for the container. */
+    box-sizing: border-box;
+    /* Specifies how the element's total width and height are calculated. */
+}
+
+/* Body styles */
+body {
+    background-color: #444444;
+    /* Sets the background color of the body. */
+}
+
+/* Home section styles */
+.Home h1 {
+    font-size: 82px;
+    /* Sets the font size for h1 in the home section. */
     position: absolute;
+    /* Positions the element absolutely. */
+    top: 25%;
+    /* Positions the element 25% from the top of the containing block. */
+    transform: translateY(-50%);
+    /* Moves the element vertically up by 50% of its own height. */
+    text-align: left;
+    /* Aligns the text to the left. */
+    color: goldenrod;
+    /* Sets the text color to goldenrod. */
+    border-bottom: 5px solid gold;
+    /* Adds a border at the bottom. */
+    text-shadow: 5px 5px black;
+    /* Adds a shadow to the text. */
+}
+
+.Home h2 {
+    font-size: 28px;
+    /* Sets the font size for h2 in the home section. */
+    position: absolute;
+    /* Positions the element absolutely. */
+    top: 35%;
+    /* Positions the element 35% from the top of the containing block. */
+    transform: translateY(-50%);
+    /* Moves the element vertically up by 50% of its own height. */
+    color: #fff;
+    /* Sets the text color to white. */
+    text-shadow: 2px 2px black;
+    /* Adds a shadow to the text. */
+}
+
+.Home h4 {
+    font-size: 26px;
+    /* Sets the font size for h4 in the home section. */
+    font-weight: bold;
+    /* Sets the font weight to bold. */
+    position: absolute;
+    /* Positions the element absolutely. */
+    top: 40%;
+    /* Positions the element 40% from the top of the containing block. */
+    transform: translateY(-50%);
+    /* Moves the element vertically up by 50% of its own height. */
+    text-align: left;
+    /* Aligns the text to the left. */
+    color: #fff;
+    /* Sets the text color to white. */
+    text-shadow: 2px 2px black;
+    /* Adds a shadow to the text. */
+}
+
+body .Home p {
+    font-size: 24px;
+    /* Sets the font size for paragraphs in the home section. */
+    position: absolute;
+    /* Positions the element absolutely. */
+    top: 45%;
+    /* Positions the element 45% from the top of the containing block. */
+    transform: translateY(-50%);
+    /* Moves the element vertically up by 50% of its own height. */
+    text-align: left;
+    /* Aligns the text to the left. */
+    color: #fff;
+    /* Sets the text color to white. */
+    margin-bottom: 1;
+    /* Sets margin-bottom to 1. */
+    text-shadow: 2px 2px black;
+    /* Adds a shadow to the text. */
+}
+
+.Home .image-container {
+    width: 62%;
+    /* Sets the width of the image container. */
+    height: 700px;
+    /* Sets the height of the image container. */
+    background-color: #333333;
+    /* Sets the background color of the image container. */
+    position: absolute;
+    /* Positions the element absolutely. */
     top: 20%;
-    right:8%;
+    /* Positions the element 20% from the top of the containing block. */
+    right: 8%;
+    /* Positions the element 8% from the right of the containing block. */
     z-index: -1;
+    /* Sets the stacking order of the image container. */
     border-radius: 5%;
-    border: 5px solid black; 
+    /* Adds border radius to the image container. */
+    border: 5px solid black;
+    /* Adds a border around the image container. */
     text-shadow: 10px 10px black;
+    /* Adds a shadow to the text. */
 }
 
-.Home .container a{
+.Home .container a {
     color: black;
+    /* Sets the text color to black. */
     font-size: 32px;
+    /* Sets the font size for links. */
     font-weight: bolder;
+    /* Sets the font weight to bolder. */
     text-decoration: none;
+    /* Removes underline from links. */
     padding: 18px 50px;
+    /* Sets padding for links. */
     border-radius: 30px;
+    /* Adds border radius to links. */
     background: yellow;
+    /* Sets the background color to yellow. */
     display: flex;
-    margin-top: 40%;
-    margin-bottom: 30%;
+    /* Makes the links a flex container to control their layout. */
+    margin-top: 30%;
+    /* Sets margin-top for links. */
     width: 220px;
+    /* Sets the width of links. */
+    margin-bottom: 24.5%;
 }
 
-.Home .container a:hover{
+.Home .container a:hover {
     color: white;
-    font-size: 32px;
-    font-weight: bolder;
-    text-decoration: none;
-    padding: 18px 50px;
-    border-radius: 30px;
+    /* Changes the text color on hover to white. */
     background: red;
-    display: flex;
-    margin-top: 40%;
-    margin-bottom: 30%;
+    /* Sets background color on hover to red. */
     transition: 0.5s;
+    /* Adds transition effect on hover. */
 }
 
+/* Plot section styles */
 .Plot {
-    position: relative; 
-    margin-top: 13.6%; 
     text-align: center;
-    margin-bottom: 15%;
+    /* Aligns text to the center. */
+    margin-top: 10%;
+    /* Sets margin-top for the plot section. */
+    border: 20px 20px;
+    /* Sets border properties. */
 }
 
 .Plot h1 {
-    display: flex;
-    font-size: 100px; 
-    border: 2px black;
+    font-size: 100px;
+    /* Sets the font size for h1 in the plot section. */
     font-weight: bolder;
-    justify-content: center;
-    position: relative; 
-    margin-bottom: 12%; 
-    margin-left: 42%;
+    /* Sets the font weight to bolder. */
+    margin: 0 auto;
+    /* Centers the element horizontally. */
     color: goldenrod;
-    border-bottom: 5px solid goldenrod;
+    /* Sets the text color to goldenrod. */
+    border: 5px solid goldenrod;
+    /* Adds a border. */
     text-shadow: 5px 5px black;
+    /* Adds a shadow to the text. */
     background-color: black;
+    /* Sets the background color to black. */
+    display: table;
+    /* Displays the element as a table. */
+    padding: 0 200px;
+    /* Sets padding for the element. */
 }
 
 .Plot p {
     font-weight: normal;
+    /* Sets the font weight to normal. */
     text-align: justify;
-    margin-right: 8%;
-    margin-top: 5%;
-    margin-bottom: 14%;
+    /* Aligns the text to justify. */
     font-size: 32px;
+    /* Sets the font size for paragraphs. */
     padding: 20px;
+    /* Sets padding for paragraphs. */
     border: 5px solid goldenrod;
+    /* Adds a border. */
     background-color: black;
+    /* Sets the background color to black. */
+    color: white;
+    /* Sets the text color to white. */
+    padding: auto 500px;
+    /* Sets padding for paragraphs. */
 }
 
-
+/* Cast section styles */
 .Cast {
-    position: relative; 
-    margin-top: 3%; 
     text-align: center;
+    /* Aligns text to the center. */
+    margin-top: 5%;
+    /* Sets margin-top for the cast section. */
+    margin-bottom: -5%;
+    /* Sets negative margin-bottom for the cast section. */
 }
 
 .Cast h1 {
-    font-size: 100px; 
-    border: 2px black;
+    font-size: 100px;
+    /* Sets the font size for h1 in the cast section. */
     font-weight: bolder;
-    justify-content: center;
-    position: relative; 
-    margin-bottom: -5%; 
+    /* Sets the font weight to bolder. */
+    margin-bottom: -10%;
+    /* Sets negative margin-bottom. */
     color: goldenrod;
+    /* Sets the text color to goldenrod. */
+    margin: 0 auto;
+    /* Centers the element horizontally. */
     border: 5px solid goldenrod;
+    /* Adds a border. */
     text-shadow: 5px 5px black;
+    /* Adds a shadow to the text. */
     background-color: black;
+    /* Sets the background color to black. */
+    display: table;
+    /* Displays the element as a table. */
+    padding: 0 200px;
+    /* Sets padding for the element. */
 }
 
 .Cast h3 {
-    font-size: 100px; 
-    border: 2px black;
+    font-size: 100px;
+    /* Sets the font size for h3 in the cast section. */
     font-weight: bolder;
-    justify-content: center;
-    position: relative; 
-    margin-top: 5%;
-    margin-bottom: -5%; 
+    /* Sets the font weight to bolder. */
+    margin-bottom: -5%;
+    /* Sets a negative margin-bottom. */
     color: black;
+    /* Sets the text color to black. */
 }
 
+/* Card container styles */
 .card-container {
     display: flex;
+    /* Makes the card container a flex container to control its layout. */
     justify-content: center;
+    /* Centers the flex items horizontally. */
     flex-wrap: wrap;
-    margin-top: 40px;
+    /* Allows flex items to wrap into multiple lines. */
     margin-bottom: 10%;
+    /* Sets margin-bottom for the card container. */
+    margin-top: -70px;
+    /* Sets negative margin-top for the card container. */
 }
 
 .card {
     width: 325px;
+    /* Sets the width of the card. */
     background-color: #f0f0f0;
-    border: 8px;
-    overflow: hidden;
-    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-    margin: 20px;
+    /* Sets the background color of the card. */
     border: solid black 2px;
+    /* Sets border properties. */
+    overflow: hidden;
+    /* Hides overflowing content. */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Adds a box shadow. */
+    margin: 20px;
+    /* Sets margin for the card. */
 }
 
-.card img{
+.card img {
     width: 100%;
+    /* Sets the width of the image inside the card. */
     height: auto;
-    
+    /* Sets the height of the image inside the card to auto. */
 }
 
 .card-content {
     padding: 16px;
+    /* Sets padding for the card content. */
 }
 
-.card-content h3{
+.card-content h3 {
     font-size: 32px;
+    /* Sets the font size for h3 in the card content. */
     margin-bottom: 8px;
+    /* Sets margin-bottom for h3 in the card content. */
 }
 
-.card-content p{
-    color:#666;
-    margin: 5% 0; 
-    font-size: 18px; 
+.card-content p {
+    color: #666;
+    /* Sets the text color to #666. */
+    margin: 5% 0;
+    /* Sets margin for paragraphs in the card content. */
+    font-size: 18px;
+    /* Sets the font size for paragraphs in the card content. */
 }
 
-.card-content .btn{
+.card-content .btn {
     display: inline-block;
+    /* Makes the button inline-block. */
     padding: 8px 16px;
+    /* Sets padding for the button. */
     background-color: yellow;
+    /* Sets the background color of the button to yellow. */
     text-decoration: none;
+    /* Removes underline from the button. */
     border-radius: 4px;
+    /* Adds border radius to the button. */
     margin-top: 16px;
+    /* Sets margin-top for the button. */
     color: black;
+    /* Sets the text color to black. */
     font-size: 30px;
+    /* Sets the font size for the button. */
     border: solid black 2px;
+    /* Sets border properties for the button. */
 }
 
-.card-content .btn:hover{
-    display: inline-block;
-    padding: 8px 16px;
-    background-color:red;
-    text-decoration: none;
-    border-radius: 4px;
-    margin-top: 16px;
+.card-content .btn:hover {
+    background-color: red;
+    /* Sets background color on hover to red. */
     color: white;
-    font-size: 30px;
+    /* Changes the text color on hover to white. */
     transition: 0.5s;
+    /* Adds transition effect on hover. */
 }
 
+/* Reviews section styles */
 .Reviews {
-    position: relative; 
-    margin-top: 10%; 
-    margin-bottom: 5%;
     text-align: center;
+    /* Aligns text to the center. */
+    margin-top: 15%;
+    /* Sets margin-top for the reviews section. */
+    margin-bottom: 10%;
+    /* Sets margin-bottom for the reviews section. */
 }
 
 .Reviews h1 {
-    display: flex;
-    font-size: 100px; 
+    font-size: 100px;
+    /* Sets the font size for h1 in the reviews section. */
     font-weight: bolder;
-    justify-content: center;
-    position: relative; 
-    margin-bottom: 12%; 
+    /* Sets the font weight to bolder. */
+    margin-bottom: 15%;
+    /* Sets margin-bottom for h1 in the reviews section. */
     margin-left: 42%;
+    /* Sets margin-left for h1 in the reviews section. */
     color: goldenrod;
+    /* Sets the text color to goldenrod. */
     border: 5px solid goldenrod;
+    /* Adds a border. */
     text-shadow: 5px 5px black;
+    /* Adds a shadow to the text. */
+    display: table;
+    /* Displays the element as a table. */
+    margin: 0 auto;
+    /* Centers the element horizontally. */
     background-color: black;
+    /* Sets the background color to black. */
+    padding: 0 200px;
+    /* Sets padding for the element. */
 }
 
 .Reviews h2 {
-    bottom:120px;
     font-weight: bolder;
+    /* Sets the font weight to bolder. */
     font-size: 60px;
-    justify-content: center;
+    /* Sets the font size for h2 in the reviews section. */
     border-bottom: 5px solid goldenrod;
+    /* Adds a border at the bottom. */
     text-shadow: 5px 5px black;
+    /* Adds a shadow to the text. */
     background-color: black;
+    /* Sets the background color to black. */
+    display: table;
+    /* Displays the element as a table. */
+    margin: 0 auto;
+    /* Centers the element horizontally. */
+    margin-top: 10%;
+    /* Sets margin-top for h2 in the reviews section. */
+    text-align: center;
+    /* Aligns the text to the center. */
+    padding: 0 100px;
+    /* Sets padding for the element. */
 }
 
-.Reviews  h4 {
+
+.Reviews h4 {
+    font-family: "Roboto", sans-serif;
+    /* Specifies the font-family for h4 in the reviews section. */
     width: 100%;
+    /* Sets the width to 100%. */
     font-weight: normal;
+    /* Sets the font weight to normal. */
     text-align: justify;
-    margin-right: 8%;
+    /* Aligns the text to justify. */
+    margin-right: 60%;
+    /* Sets margin-right for h4 in the reviews section. */
     margin-top: 5%;
-    margin-bottom: 20%;
+    /* Sets margin-top for h4 in the reviews section. */
+    margin-bottom: 10%;
+    /* Sets margin-bottom for h4 in the reviews section. */
     font-size: 32px;
+    /* Sets the font size for h4 in the reviews section. */
     padding: 2%;
+    /* Sets padding for h4 in the reviews section. */
+    color: white;
+    /* Sets the text color to white. */
     border: 5px solid goldenrod;
+    /* Adds a border. */
     text-shadow: 5px 5px black;
-    border: 5px solid goldenrod;
+    /* Adds a shadow to the text. */
     background-color: black;
+    /* Sets the background color to black. */
 }
 
+/* Profile container styles */
 .Reviews .profile-container1 {
+    top: 72%;
+    /* Sets the top position for profile container 1 in the reviews section. */
     display: flex;
+    /* Makes the profile container a flex container to control its layout. */
     flex-wrap: wrap;
+    /* Allows flex items to wrap into multiple lines. */
     width: 20%;
+    /* Sets the width of the profile container. */
     height: 400px;
+    /* Sets the height of the profile container. */
     background-color: #333333;
+    /* Sets the background color of the profile container. */
     position: absolute;
-    top: 15%;
-    right:8%;
+    /* Positions the element absolutely. */
+    right: 8%;
+    /* Positions the element 8% from the right of the containing block. */
     border-radius: 5%;
-    border: 5px solid black; 
-    margin-top: -5%;
+    /* Adds border radius to the profile container. */
+    border: 5px solid black;
+    /* Adds a border around the profile container. */
+    z-index: -1;
+    /* Sets the stacking order of the profile container. */
 }
 
 .Reviews .profile-container2 {
+    top: 126%;
+    /* Sets the top position for profile container 2 in the reviews section. */
     display: flex;
+    /* Makes the profile container a flex container to control its layout. */
     flex-wrap: wrap;
+    /* Allows flex items to wrap into multiple lines. */
     width: 20%;
+    /* Sets the width of the profile container. */
     height: 400px;
+    /* Sets the height of the profile container. */
     background-color: #333333;
+    /* Sets the background color of the profile container. */
     position: absolute;
-    top: 20%;
-    right:8%;
+    /* Positions the element absolutely. */
+    right: 8%;
+    /* Positions the element 32% from the right of the containing block. */
     border-radius: 5%;
-    border: 5px solid black; 
-    margin-top: 18%;
+    /* Adds border radius to the profile container. */
+    border: 5px solid black;
+    /* Adds a border around the profile container. */
+    z-index: -1;
+    /* Sets the stacking order of the profile container. */
 }
 
 .Reviews .profile-container3 {
+    top: 182%;
+    /* Sets the top position for profile container 2 in the reviews section. */
     display: flex;
+    /* Makes the profile container a flex container to control its layout. */
     flex-wrap: wrap;
+    /* Allows flex items to wrap into multiple lines. */
     width: 20%;
+    /* Sets the width of the profile container. */
     height: 400px;
+    /* Sets the height of the profile container. */
     background-color: #333333;
+    /* Sets the background color of the profile container. */
     position: absolute;
-    top: 20%;
-    right:8%;
+    /* Positions the element absolutely. */
+    right: 8%;
+    /* Positions the element 32% from the right of the containing block. */
     border-radius: 5%;
-    border: 5px solid black; 
-    margin-top: 42%;
+    /* Adds border radius to the profile container. */
+    border: 5px solid black;
+    /* Adds a border around the profile container. */
+    z-index: -1;
+    /* Sets the stacking order of the profile container. */
 }
 
+/* Footer styles */
 footer {
+    font-size: 32px;
+    /* Sets the font size. */
+    background-color: #000000;
+    /* Sets the background color of the footer. */
+    color: #ffffff;
+    /* Sets the text color to white. */
     text-align: center;
-    font-size: 24px;
-    background-color: black;
-    color:white;
+    /* Aligns text to the center. */
+    padding: 10px;
+    /* Sets padding for the footer. */
+    margin-top: 40px;
+    /* Sets a top-margin of 40px. */
 }

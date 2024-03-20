@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    /* Box-sizing is set to border-box so that padding and border are included in the element's total width and height. */
+    margin: 0;
+    /* Margin is set to 0 to remove any default margin. */
+    padding: 0;
+    /* Padding is set to 0 to remove any default padding. */
+    font-family: 'Times New Roman', serif;
+    /* Font-family is set to provide a fallback font for different elements. */
+}
+
+
+body h1 {
+    margin: 0 auto;
+}
+
+body {
+    background-color: pink;
+}

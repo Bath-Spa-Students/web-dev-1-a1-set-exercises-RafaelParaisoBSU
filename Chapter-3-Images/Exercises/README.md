@@ -28,7 +28,7 @@ Using the starter code below edit the files to recreate the image provided
 
 #### index.html:
 
-```<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -45,11 +45,9 @@ Using the starter code below edit the files to recreate the image provided
     <div>div#D</div>
   </body>
 </html>
-```
 
 #### style.css:
 
-```
 div {
   display: inline-block;
   font-family: sans-serif;
@@ -66,4 +64,3 @@ body {
   margin: 100px auto;
   width: max-content;
 }
-```

@@ -293,7 +293,7 @@ body .Home p {
     /* Sets margin-top for links. */
     width: 220px;
     /* Sets the width of links. */
-    margin-bottom: 24.5%;
+    margin-bottom: 26%;
 }
 
 .Home .container a:hover {
@@ -663,5 +663,5 @@ footer {
     padding: 10px;
     /* Sets padding for the footer. */
     margin-top: 40px;
-    /* Sets a top-margin of 40px. */
+    /* Sets a top-margin of 40px */
 }

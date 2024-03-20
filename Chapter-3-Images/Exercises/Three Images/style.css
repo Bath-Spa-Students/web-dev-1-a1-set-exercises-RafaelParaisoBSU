@@ -5,15 +5,93 @@
     /* Margin is set to 0 to remove any default margin. */
     padding: 0;
     /* Padding is set to 0 to remove any default padding. */
-    font-family: 'Times New Roman', serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
     /* Font-family is set to provide a fallback font for different elements. */
 }
 
-
-body h1 {
-    margin: 0 auto;
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
 
-body {
-    background-color: pink;
+.container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("Images/background image.jpg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+
+.dark-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+body h1 {
+    margin: 0px 235px;
+    font-size: 100px;
+    border: 5px solid yellow;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: palevioletred;
+    box-shadow: 8px 8px 8px violet;
+}
+
+figcaption {
+    position: relative;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 32px;
+    font-weight: normal;
+    border: 5px solid palevioletred;
+    background-color: palegoldenrod;
+}
+
+.Images .Image1,
+.Images .Image2,
+.Images .Image3 {
+    border: 10px solid palevioletred;
+    margin: 2% auto;
+    transition: filter 0.5s;
+    box-shadow: 16px 16px 16px violet;
+}
+
+.Images .Image1:hover {
+    filter: blur(5px);
+}
+
+.Images .Image2:hover {
+    filter: sepia();
+}
+
+.Images .Image3:hover {
+    filter: invert();
+}
+
+footer {
+    margin-top: 3%;
+    font-size: 24px;
+    font-weight: normal;
+    background-color: purple;
+    padding: 5px;
 }

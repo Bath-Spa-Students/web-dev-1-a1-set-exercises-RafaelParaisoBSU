@@ -37,17 +37,6 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font-family is set to provide a fallback font for different elements. */
 }
 
-* {
-    box-sizing: border-box;
-    /* Box-sizing is set to border-box so that padding and border are included in the element's total width and height. */
-    margin: 0;
-    /* Margin is set to 0 to remove any default margin. */
-    padding: 0;
-    /* Padding is set to 0 to remove any default padding. */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
-    /* Font-family is set to provide a fallback font for different elements. */
-}
-
 /* Setting styles for the body element */
 body {
     margin: 0;

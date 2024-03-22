@@ -9,7 +9,7 @@
 
 header {
     background-color: #17072b;
-    padding: 25px 25px;
+    padding: 15px 15px;
     text-align: center;
 }
 
@@ -18,27 +18,84 @@ header h1 {
     font-size: 700;
     text-decoration: underline;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
-body p {
+body p,h2  {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 400;
 }
 
 nav {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 20px;
-    word-spacing: 25px;
 }
 
 nav a{
     color:white;
     text-decoration: none;
-    margin-top: 20px;
-    word-spacing: 25px;
+    margin: 10px 8px;
+    font-size: 20px;
 }
 
-.wordspace {
-    word-spacing: -10px;
+main {
+    float: left;
+}
+
+main h2 {
+    margin: 20px 30px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+main p {
+    margin-left: 30px;
+    text-align: justify;
+} 
+
+.MainImage {
+    margin: 10px 30px;
+    width: 630px;
+}
+
+aside {
+    float: right;
+    background-color:#172d67;
+    margin-top: 10px;
+    padding: 20px 35px;
+}
+
+aside h2 {
+    color: white;
+    font-size: bolder;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+aside li {
+    color: white;
+    font-size: bolder;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style-type:'-';
+}
+
+.smallimages {
+    margin-top: 47px;
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: #8c15e9;
+    color: white;
+    text-align: center;
 }

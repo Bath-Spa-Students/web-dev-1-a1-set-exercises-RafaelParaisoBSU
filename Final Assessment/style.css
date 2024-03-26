@@ -9,11 +9,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 20px;
+    padding: 0px 20px;
     position: sticky;
     top: 0%;
     z-index: 1;
     border-bottom: solid orange 2px;
+    opacity: 100%;
 }
 
 .navbar .nav-links {
@@ -54,5 +55,33 @@
 
 .navbar a:hover::after {
     width: 97%;
-    height: 8%; 
+    height: 10%; 
 }
+
+.bg {
+    z-index: -1;
+}
+
+
+.playnow {
+    position: absolute;
+    top: 60%; 
+    left: 83%; 
+    transform: translate(-50%, -50%); 
+}
+
+.play-button {
+    width: 300px;
+    height: 75px;
+    background-image: url(Images/playnow1.png);
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+}
+
+.play-button:hover {
+    background-image: url(Images/playnow2.png);
+    transition: 0.4s ease;
+}
+
+

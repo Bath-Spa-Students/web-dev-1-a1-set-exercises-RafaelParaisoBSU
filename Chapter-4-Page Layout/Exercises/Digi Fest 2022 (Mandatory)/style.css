@@ -1,106 +1,186 @@
+/* Glossary */
+
+/* ---Text Related Styling--- /
+/ font-family: Specifies which font or fonts to be used. /
+/ font-size: Changes the font size. /
+/ text-decoration: Defines whether text can have any decoration, e.g. underlines. /
+/ color: Used to sets the text's color. */
+
+/* ---Padding and Margin--- /
+/ padding: Used to change an element's inner padding. /
+/ margin: Used to change the area surrounding an element. */
+
+/* ---Position Styling--- /
+/ position: Indicates how an element is to be positioned. */
+
+/* ---Color-Related Styling--- /
+/ background-color: Adjusts an element's background color. */
+
+/* ---Box Model--- /
+/ box-sizing: This defines how an element's height and width are assigned. /
+/ width: This determines an element's width. /
+/ height: This determines an element's height. */
+
+/* ---Transitions and Transformations--- /
+/ transform: Allows an element to change such as scaling, rotation, etc. */
+
 * {
     box-sizing: border-box;
-    /* box-sizing is set to border-box so that padding and border are included in the element's total width and height. */
+    /* Ensures that padding and border are included in the element's total width and height. */
     margin: 0;
-    /* Margin is set to 0 to remove any default margin. */
+    /* Removes any default margin. */
     padding: 0;
-    /* Padding is set to 0 to remove any default padding. */
+    /* Removes any default padding. */
 }
 
 header {
     background-color: #17072b;
+    /* Sets the background color for the header element. */
     padding: 10px 10px;
+    /* Defines the padding for the header element. */
     text-align: center;
+    /* Aligns the text within the header element to the center. */
 }
 
 header h1 {
     margin-top: 10px;
+    /* Sets the top margin for the h1 element within the header. */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Specifies font-family for the h1 element within the header. */
     font-size: 700;
+    /* Sets the font size for the h1 element within the header. */
     text-decoration: underline;
+    /* Adds underline to the text of the h1 element the  within header. */
     color: white;
+    /* Sets the text color of the h1 element within header to white. */
     margin-bottom: 12px;
+    /* Sets the bottom margin for the h1 element within the header. */
 }
 
-body p,h2  {
+body p,
+h2 {
     font-family: Arial, Helvetica, sans-serif;
+    /* Specifies font-family for paragraphs and h2 elements within the body. */
     font-size: 400;
+    /* Sets the font size to 400 for paragraphs and h2 elements within the body. */
 }
 
 nav {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Specifies font-family for the nav element. */
 }
 
-nav a{
-    color:white;
+nav a {
+    color: white;
+    /* Sets the text color of anchor elements within nav. */
     text-decoration: none;
+    /* Removes underline from anchor elements within nav. */
     margin: 10px 8px;
+    /* Sets the margin for anchor elements within nav. */
     font-size: 20px;
+    /* Sets the font size for anchor elements within nav. */
 }
 
 main {
     float: left;
+    /* Floats the main element to the left. */
     margin-bottom: 5px;
+    /* Sets the bottom margin for the main element. */
     margin-left: 2px;
+    /* Sets the left margin for the main element. */
 }
 
 main h2 {
     margin: 10px 30px;
+    /* Sets the margins for the h2 element within main. */
     text-decoration: underline;
+    /* Adds underline to the text of the h2 element within main. */
     font-weight: bold;
+    /* Sets the font weight to bold for the h2 element within main. */
 }
 
 main p {
     margin-left: 30px;
+    /* Sets the left margin for paragraphs within main. */
     text-align: justify;
-} 
+    /* Justifies the text alignment for paragraphs within main. */
+}
 
 .MainImage {
     margin: 10px 30px;
+    /* Sets the margins for elements with the class MainImage. */
     width: 630px;
+    /* Sets the width for elements with the class MainImage. */
 }
 
 aside {
     float: right;
-    background-color:#172d67;
+    /* Floats the aside element to the right. */
+    background-color: #172d67;
+    /* Sets the background color for the aside element. */
     margin-top: 5px;
+    /* Sets the top margin for the aside element. */
     padding: 12px 40px;
+    /* Sets the padding for the aside element. */
     padding-right: px;
+    /* Adds padding to the right side of the aside element. */
     padding-left: 20px;
+    /* Adds padding to the left side of the aside element. */
 }
 
 aside h2 {
     color: white;
+    /* Sets the text color of h2 elements within aside to white. */
     font-size: bolder;
+    /* Sets the font size to bolder for h2 elements within aside. */
     text-decoration: underline;
+    /* Adds underline to the text of h2 elements within aside. */
     margin-bottom: 20px;
+    /* Sets the bottom margin for h2 elements within aside. */
     font-size: 28px;
+    /* Sets the font size for h2 elements within aside. */
 }
 
 aside li {
     color: white;
+    /* Sets the text color of list items within aside to white. */
     font-size: bolder;
+    /* Sets the font size to bolder for list items within aside. */
     margin-right: 20px;
+    /* Sets the right margin for list items within aside. */
     margin-top: 5px;
+    /* Sets the top margin for list items within aside. */
     margin-bottom: 15px;
+    /* Sets the bottom margin for list items within aside. */
     font-family: Arial, Helvetica, sans-serif;
+    /* Specifies font-family for list items within aside. */
 }
 
 ul {
-    list-style-type:'-';
+    list-style-type: '-';
+    /* Sets the list-style-type to a dash for unordered lists. */
 }
 
 .smallimages {
     margin-top: 47px;
+    /* Sets the top margin for elements with the class smallimages. */
 }
 
 footer {
     font-family: Arial, Helvetica, sans-serif;
+    /* Specifies font-family for the footer element. */
     position: fixed;
+    /* Fixes the position of the footer element. */
     bottom: 0;
+    /* Sets the distance from the bottom for the footer element. */
     width: 100%;
+    /* Sets the width of the footer element to 100%. */
     padding: 5px;
+    /* Sets the padding for the footer element. */
     background-color: #8c15e9;
+    /* Sets the background color for the footer element. */
     color: white;
+    /* Sets the text color of the footer element to white. */
     text-align: center;
+    /* Centers the text within the footer element. */
 }

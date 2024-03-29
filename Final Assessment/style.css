@@ -4,42 +4,65 @@
     padding: 0;
 }
 
+body {
+    margin: 0;
+}
+
+body h1 {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+body p {
+    font-family:'Roboto', sans-serif;
+}
+
+.mainbg .bg {
+    margin: 0;
+    background-image: url('Images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    z-index: 2; /* Set a higher z-index than the video */
+}
+
 .navbar {
     background-color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 20px;
+    padding: 10px 20px;
     position: sticky;
-    top: 0%;
+    top: 0;
     z-index: 1;
     border-bottom: solid orange 2px;
-    opacity: 100%;
 }
 
 .navbar .nav-links {
     display: flex;
-    padding-right: 40px;
 }
 
 .navbar a {
     font-family: "Bebas Neue", sans-serif;
     color: white;
     text-decoration: none;
-    font-size: 24px;
-    margin-left: 50px;
-    letter-spacing: 4px;
-    position: relative; 
+    font-size: 2rem;
+    margin-left: 40px;
+    margin-right: 10px;
+    letter-spacing: 2px;
+    position: relative;
     text-align: center;
 }
 
 .navbar .logo-image {
-    overflow: hidden;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .navbar a:hover {
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .navbar a::after {
@@ -50,24 +73,19 @@
     width: 0;
     height: 2px;
     background-color: orange;
-    transition: width 0.3s ease, height 0.3s ease; 
+    transition: width 0.3s ease, height 0.3s ease;
 }
 
 .navbar a:hover::after {
-    width: 97%;
-    height: 10%; 
-}
-
-.bg {
-    z-index: -1;
+    width: 95%;
 }
 
 
 .playnow {
     position: absolute;
-    top: 60%; 
-    left: 83%; 
-    transform: translate(-50%, -50%); 
+    top: 78%;
+    left: 81%;
+    transform: translate(-50%, -50%);
 }
 
 .play-button {
@@ -77,11 +95,35 @@
     background-size: cover;
     border: none;
     cursor: pointer;
+    box-shadow: 0px 0px 5px 5px black;
 }
 
 .play-button:hover {
     background-image: url(Images/playnow2.png);
-    transition: 0.4s ease;
+    transition: 0.2s ease;
+    box-shadow: 0px 0px 5px 5px goldenrod;
 }
 
+.tagline {
+    width: 500px;
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    top: 63%;
+    margin-left: 81%;
+    transform: translate(-50%, -50%);
+    padding: 10px 10px;
+    text-align: center;
+    color: black;
+    text-shadow: 0px 0px 0px black,
+}
 
+video {
+    position: absolute;
+    top: 140%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; /* Set a lower z-index than the background image */
+}

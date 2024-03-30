@@ -86,12 +86,10 @@ main {
     /* Floats the main element to the left. */
     margin-bottom: 5px;
     /* Sets the bottom margin for the main element. */
-    margin-left: 2px;
-    /* Sets the left margin for the main element. */
 }
 
 main h2 {
-    margin: 1.5% 1.5%;
+    margin: 1.5% 2%;
     /* Sets the margins for the h2 element within main. */
     text-decoration: underline;
     /* Adds underline to the text of the h2 element within main. */
@@ -102,17 +100,17 @@ main h2 {
 }
 
 main p {
-    margin-left: 20px;
+    margin-left: 1.5rem;
     /* Sets the left margin for paragraphs within main. */
     text-align: justify;
     /* Justifies the text alignment for paragraphs within main. */
 }
 
 .MainImage {
-    margin: 2% 1%;
+    margin: 1% 2%;
     /* Sets the margins for elements with the class MainImage. */
     width: 100%;
-    /* Sets the width for elements with the class MainImage. */
+    /* Sets the width1for elements with the class MainImage. */
 }
 
 aside {
@@ -158,7 +156,7 @@ ul {
 }
 
 .smallimages {
-    margin-top: 26%;
+    margin-top: 23.5%;
     /* Sets the top margin for elements with the class smallimages. */
 }
 
@@ -179,4 +177,5 @@ footer {
     /* Sets the text color of the footer element to white. */
     text-align: center;
     /* Centers the text within the footer element. */
+    font-size: 1.3rem;
 }

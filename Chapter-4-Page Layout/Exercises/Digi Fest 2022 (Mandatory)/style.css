@@ -91,7 +91,7 @@ main {
 }
 
 main h2 {
-    margin: 10px 30px;
+    margin: 20px 20px;
     /* Sets the margins for the h2 element within main. */
     text-decoration: underline;
     /* Adds underline to the text of the h2 element within main. */
@@ -100,14 +100,14 @@ main h2 {
 }
 
 main p {
-    margin-left: 30px;
+    margin-left: 20px;
     /* Sets the left margin for paragraphs within main. */
     text-align: justify;
     /* Justifies the text alignment for paragraphs within main. */
 }
 
 .MainImage {
-    margin: 10px 30px;
+    margin: 10px 20px;
     /* Sets the margins for elements with the class MainImage. */
     width: 630px;
     /* Sets the width for elements with the class MainImage. */
@@ -118,13 +118,13 @@ aside {
     /* Floats the aside element to the right. */
     background-color: #172d67;
     /* Sets the background color for the aside element. */
-    margin-top: 5px;
+    margin-top: 0.5rem;
     /* Sets the top margin for the aside element. */
-    padding: 12px 40px;
+    padding: 21px 30px;
     /* Sets the padding for the aside element. */
-    padding-right: px;
+    padding-right: 2rem;
     /* Adds padding to the right side of the aside element. */
-    padding-left: 20px;
+    padding-left: 2rem;
     /* Adds padding to the left side of the aside element. */
 }
 

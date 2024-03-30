@@ -25,7 +25,7 @@ body p {
     height: 100%;
     object-fit: cover;
     overflow: hidden;
-    z-index: 2; /* Set a higher z-index than the video */
+    z-index: 2; 
 }
 
 .navbar {
@@ -36,8 +36,9 @@ body p {
     padding: 10px 20px;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 999;
     border-bottom: solid orange 2px;
+    transform: translateZ(0)
 }
 
 .navbar .nav-links {
@@ -48,7 +49,7 @@ body p {
     font-family: "Bebas Neue", sans-serif;
     color: white;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-left: 40px;
     margin-right: 10px;
     letter-spacing: 2px;
@@ -100,21 +101,28 @@ body p {
 .play-button:hover {
     background-image: url(Images/playnow2.png);
     transition: 0.2s ease;
-    box-shadow: 0px 0px 5px 5px goldenrod;
+    box-shadow: 0px 0px 5px 5px orange,
+                0px 0px 0px px black;;
 }
 
 .tagline {
     width: 500px;
     position: absolute;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bolder;
-    top: 63%;
+    top: 62.5%;
     margin-left: 81%;
     transform: translate(-50%, -50%);
     padding: 10px 10px;
     text-align: center;
+    letter-spacing: 1px;
     color: black;
-    text-shadow: 0px 0px 1px yellow;
+    text-shadow: 
+        -1px -1px 0 white,  
+         1px -1px 0 white,
+        -1px 1px 0 white,
+         1px 1px 0 white,
+         0px 0px 2px white;
 }
 
 video {
@@ -125,20 +133,19 @@ video {
     height: 100%;
     object-fit: cover;
     background-color: transparent;
-    z-index: -1; /* Set a lower z-index than the background image */
+    z-index: -2;
 }
 
 
 .overlay {
-    background: transparent;
-    background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: -1; 
 }
 
 .overlay1 {
     position: absolute;
-    top: 105%;
+    top: 103%;
     width: 100%;
     height: 100%;
 }
@@ -147,5 +154,6 @@ video {
     position: absolute;
     top: 205%;
     width: 100%;
-    height: 100%;
 }
+
+

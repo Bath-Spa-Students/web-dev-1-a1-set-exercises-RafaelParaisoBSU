@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.header {
+    text-align: center;
+    padding: 2% 2%;
+    background-color: palegoldenrod;
+    color: palevioletred;
+    border: 8px solid palevioletred;
+    text-shadow: 0px 0px 5px red;
+    font-size: 1.7rem;
+}
+
+.container h1 {
+    padding: 1.5% 1.5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+    background-color: lightpink;
+    color: white;
+    text-shadow: 0px 0px 5px palevioletred;
+}
+
+.container p {
+    font-size: 1.3rem;
+    margin: 2% 2%;
+}
+
+.container h2 {
+    font-size: 1.6rem;
+    margin: 2% 2%;
+    color: palevioletred;
+    font-weight: bolder;
+}
+
+.container pre {
+    font-size: 1.2rem;
+    margin: 1.5% 1.5%;
+}
+
+.boxwrapper {
+    margin: 2% 2%;
+    padding:1% 1%;
+    background-color: palegoldenrod;
+    border: 5px solid palevioletred;
+}
+
+.container1 h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-bottom: -2%;
+    margin-top: -1%;
+}
+
+
+.container1 pre {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: -2%;
+    padding-bottom: 2%;
+}
+
+.boxwrapper1 {
+    margin: 2% 2%;
+    background-color: palegoldenrod;
+    border: 5px solid palevioletred;
+}
+
+.header2 {
+    background-color: palegoldenrod;
+    padding: 5px;
+    color: palevioletred;
+    border: 2px solid lightpink;
+    border-bottom: -20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+}
+
+.flex > div {
+    flex-basis: calc(33.33% - 10px);
+    border: 5px solid palevioletred;
+}
+
+.flex h2 {
+    background-color: palegoldenrod;
+    padding: 20px;
+    color: palevioletred;
+    border: 2px solid lightpink;
+}
+
+.flex pre {
+    padding: 20px;
+    color: black;
+    border: 2px solid lightpink;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 2%;
+}
+.row > div {
+    flex-basis: calc(50% - 10px);
+    border: 5px solid palevioletred;
+    padding: 20px;
+}
+
+.row h2 {
+    background-color: palegoldenrod;
+    padding: 20px;
+    color: palevioletred;
+    border: 2px solid lightpink;
+}
+
+.row pre {
+    padding: 20px;
+    color: black;
+    border: 2px solid lightpink;
+}
+
+footer {
+    margin-top: 10%;
+    bottom: 0%;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    border: 5px solid palevioletred;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-weight: 700;
+}

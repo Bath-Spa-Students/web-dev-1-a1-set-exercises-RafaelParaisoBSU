@@ -16,23 +16,22 @@
         <h1> What is HTML?</h1>
         <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages and web applications.
             It provides the structure and content of a webpage by using a system of tags and attributes.</p>
-
-        <h2> HTML Page Structure</h2>
-        <pre>
-            &lt;!DOCTYPE html&gt; <br>
-            &lt;html lang="en"&gt; <br>
-            &lt;head&gt; <br>
-                &lt;meta charset="UTF-8"&gt; <br>
-                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; <br>
-                &lt;title&gt;Document&lt;/title&gt; <br> 
-            &lt;/head&gt; <br>
-            &lt;body&gt; <br>
-                
-            &lt;/body&gt; <br> 
-            &lt;/html&gt;
-        </pre>
-    </div>
-    <div class="container">
+            <h2> HTML Page Structure</h2>
+        <div class="boxwrapper">
+            <pre>
+                &lt;!DOCTYPE html&gt; <br>
+                &lt;html lang="en"&gt; <br>
+                &lt;head&gt; <br>
+                    &lt;meta charset="UTF-8"&gt; <br>
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; <br>
+                    &lt;title&gt;Document&lt;/title&gt; <br> 
+                &lt;/head&gt; <br>
+                &lt;body&gt; <br>
+                    
+                &lt;/body&gt; <br> 
+                &lt;/html&gt;
+            </pre>
+        </div>
         <h1>Basic HTML Guide</h1>
         <h2>HTML Headings</h2>
         <p>
@@ -40,30 +39,28 @@
             highest level of heading and &lt;h6&gt; the lowest. The choice of heading level depends on the importance
             and hierarchy of the content.
         </p>
-        <div class="boxwrapper">
-            <h1>Heading 1</h1>
+    </div>
+    <div class="container1">
+        <div class="boxwrapper1">
             <pre>
-                &lt;h1&gt; Header 1 &lt;/h1&gt;
-            </pre>
-            <h2>Heading 2</h2>
-            <pre>
-                &lt;h2&gt; Header 2 &lt;/h2&gt;
-            </pre>
-            <h3>Heading 3</h3>
-            <pre>
-                &lt;h3&gt; Header 3 &lt;/h3&gt;
-            </pre>
-            <h4>Heading 4</h4>
-            <pre>
-                &lt;h4&gt; Header 4 &lt;/h4&gt;
-            </pre>
-            <h5>Heading 5</h5>
-            <pre>
-                &lt;h5&gt; Header 5 &lt;/h5&gt;
-            </pre>
-            <h6>Heading 6</h6>
-            <pre>
-                &lt;h6&gt; Header 6 &lt;/h6&gt;
+                <h1>Heading 1</h1>
+
+                <pre>&lt;h1&gt; Heading 1 &lt;/h1&gt;</pre>
+                <hr>
+                <h2>Heading 2</h2>
+                <pre>&lt;h2&gt; Heading 2 &lt;/h2&gt;</pre>
+                <hr>
+                <h3>Heading 3</h3>
+                <pre>&lt;h3&gt; Heading 3 &lt;/h3&gt;</pre>
+                <hr>
+                <h4>Heading 4</h4>
+                <pre>&lt;h4&gt; Heading 4 &lt;/h4&gt;</pre>
+                <hr>
+                <h5>Heading 5</h5>
+                <pre>&lt;h5&gt; Heading 5 &lt;/h5&gt;</pre>
+                <hr>
+                <h6>Heading 6</h6>
+                <pre>&lt;h6&gt; Heading 6 &lt;/h6&gt;</pre>
             </pre>
         </div>
     </div>
@@ -173,69 +170,197 @@
         </div>
         <div class="container">
             <h1>Formatting Tags and Special Characters</h1>
-    
-            <h2>HTML Formatting Tags</h2>
-            <div class="column1">
+            <div class="header2">
+                <h2>HTML Formatting Tags</h2>
+            </div>
+            <div class="flex">
+                <div>
                 <h2>Element</h2>
-                <pre>
-                    &lt;i&gt;
-                    &lt;u&gt;
-                    &lt;b&gt;
-                    &lt;mark&gt;
-                    &lt;sup&gt;
-                    &lt;sub&gt;
-                    &lt;small&gt;
-                    &lt;del&gt;
-                </pre>
-            </div>
-            <div class="column2">
+                <pre>&lt;i&gt;</pre>
+                <pre>&lt;u&gt;</pre>
+                <pre>&lt;b&gt;</pre>
+                <pre> &lt;mark&gt;</pre>
+                <pre>&lt;sup&gt;</pre>
+                <pre>&lt;sub&gt;</pre>
+                <pre>&lt;small&gt;</pre>
+                <pre> &lt;del&gt;</pre>
+                </div>
+                <div>
                 <h2>Definition</h2>
-                <pre>
-                    Italicizes the text.
-                    Underlines the text.
-                    Sets the font weight to bold.
-                    Highlights the text.
-                    Tranforms the text to superscript
-                    Tranforms the text to subscript.
-                    Changes the text to be one size smaller.
-                    Creates a strikethrough.
-                </pre>
-            </div>
-            <div class="column3">
+                <pre>Italicizes the text.</pre>
+                <pre>Underlines the text.</pre>
+                <pre>Sets the font weight to bold.</pre>
+                <pre>Highlights the text.</pre>
+                <pre>Tranforms the text to superscript</pre>
+                <pre>Tranforms the text to subscript.</pre>
+                <pre>Changes the text to be one size smaller.</pre>
+                <pre>Creates a strikethrough.</pre>
+                </div>
+                <div>
                 <h2>Example</h2>
-                <pre>
-                    <i>This text is italicized.</i>
-                    <u>This text is underlined.</u>
-                    <b>This text is bold.</b>
-                    <mark>This text is marked/highlighted.</mark>
-                    Part of this text is <sup>superscript</sup>
-                    Part of this text is <sub>subscript</sub>
-                    <del>This text is strikethrough/deleted.</del>
-                </pre>
+                <pre><i>This text is italicized.</i></pre>
+                <pre><u>This text is underlined.</u></pre>
+                <pre><b>This text is bold.</b></pre>
+                <pre><mark>This text is marked/highlighted.</mark></pre>
+                <pre> Part of this text is <sup>superscript</sup></pre>
+                <pre> Part of this text is <sub>subscript</sub></pre>
+                <pre><small>This text is small.</small></pre>
+                <pre><del>This text is strikethrough/deleted.</del></pre>
+                </div>
+            </div>
+            <div class="header2">
+                <h2>Special Characters</h2>
             </div>
             <div class="row">
-                <h2>Special Characters</h2>
                 <div class="column4">
-                    <h2>Characters</h2>
-                    <pre>
-                        &amp;
-                        &copy;
-                        &lt;
-                        &gt;
-                        &nbsp; (Creates empty space)
-                    </pre>
+                <h2>Characters</h2>
+                <pre>&amp;</pre>
+                <pre>&copy;</pre>
+                <pre>&lt;</pre>
+                <pre>&gt;</pre>
+                <pre> &nbsp; (Creates empty space)</pre>
                 </div>
                 <div class="column5">
-                    <h2>Code</h2>
-                    <pre>
-                        &#38;amp;
-                        &#38;copy;
-                        &#38;lt;
-                        &#38;gt;
-                        &#38;nbsp;
-                    </pre>
+                <h2>Code</h2>
+                <pre>&#38;amp;</pre>
+                <pre>&#38;copy;</pre>
+                <pre>&#38;lt;</pre>
+                <pre>&#38;gt;</pre>
+                <pre>&#38;nbsp;</pre>
                 </div>
             </div>
         </div>
+        <div class="container">
+            <h1> What is CSS?</h1>
+            <p>CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML.  CSS separates the content of a webpage from its design, allowing developers to control the layout, colors, fonts, and other visual aspects of a website. </p>
+            <div class="boxwrapper">
+                <h2> CSS Structure</h2>
+                <pre>
+                   .body {
+                        margin: 0;
+                        padding:  0;
+                   }
+                </pre>
+            </div>
+        </div>
+        <div class="container">
+            <h1> Applying CSS </h1>
+            <h2>Inline CSS</h2>
+            <p>Inline CSS refers to the practice of applying CSS styles directly within HTML elements using the style attribute. Instead of defining styles in an external CSS file or within a &lt;style> tag in the document's &lt;head> section, inline CSS attaches styles directly to individual HTML elements.
+            </p>
+            <div class="boxwrapper">
+            <pre>
+                 &lt;p style="color: red; font-size: 18px;">This is a paragraph with inline CSS.&lt;/p>
+            </pre>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Internal CSS</h2>
+            <p>Internal CSS, also known as embedded CSS or internal stylesheet, involves placing CSS rules directly within the &lt;style> element in the &lt;head> section of an HTML document.
+                <div class="boxwrapper">
+                <pre>
+                &lt;head>
+                &lt;style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        background-color: #f0f0f0;
+                    }
+                &lt;/style>
+                &lt;/head>
+                </pre>
+            </div>
+        </div>
+        <div class="container">
+            <h2>External CSS</h2>
+            <p>External CSS involves defining CSS rules in a separate file with a .css extension and then linking that file to an HTML document using the &lt;link> element in the &lt;head> section. This approach separates the styling from the HTML content, making it easier to maintain and update styles across multiple web pages.
+            <div class="boxwrapper">
+            <pre>
+                <b>in index.html:</b>
+                &lt;link rel="stylesheet" href="style.css" class="stylesheet">
+
+                <b>in style.css:</b>
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f0f0f0;
+                }
+            </pre>
+            </div>
+        </div>
+        <div class="container">
+            <h1> CSS Selectors </h1>
+            <p>CSS selectors are patterns used to select and style HTML elements. They define which elements in an HTML document will be affected by the CSS rules. </p>
+            <h2>Element Selectors</h2>
+            <p>Selects HTML elements based on their names. (body, h2, a, p)</p>
+            <div class="boxwrapper">
+                <pre>
+                    h1 {
+                        color: blue;
+                    }
+                </pre>
+            </div>
+        </div>
+        <div class="container">
+            <h2>ID Selectors</h2>
+            <p>The ID selector in CSS is used to target a specific HTML element based on its unique ID attribute. An ID selector is prefixed with a hash symbol (#) followed by the ID value of the element.</p>
+            <div class="boxwrapper">
+                <pre>
+                    #container {
+                        position: absolute;
+                        margin: 0;
+                    }
+                </pre>
+            </div>
+        </div>
+        <div class="container">
+            <h1> CSS Properties </h1>
+            <p>CCSS properties are attributes that define various stylistic aspects of HTML elements. These properties control how elements are displayed on a web page. Here are some examples of CSS Properties.</p>
+            <h2>Color Properties (Color)</h2>
+            <p>Changes the color of the text.</p>
+            <div class="boxwrapper">
+                <pre>
+                    color: #ff0000;
+                </pre>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Margin Property (Layouts)</h2>
+            <p>Changes the margin between 2 elements.</p>
+            <div class="boxwrapper">
+                <pre>
+                    margin: 10px;
+                </pre>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Border Property (Box Model)</h2>
+            <p>Creates a border around the box model.</p>
+            <div class="boxwrapper">
+                <pre>
+                    border: 1px solid #000000;
+                </pre>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Font-size Property (Typography)</h2>
+            <p>Changes the size of the text.</p>
+            <div class="boxwrapper">
+                <pre>
+                    font-size: 16px;
+                </pre>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Background-Color Property (Background)</h2>
+            <p>Sets the background color to a specified color.</p>
+            <div class="boxwrapper">
+                <pre>
+                    background-color: #f0f0f0;
+                </pre>
+            </div>
+            <footer>
+                Made by Rafael Saimon D. Paraiso
+            </footer>
+        </div>
+</body>
 </body>
 </html>

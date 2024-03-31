@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Resources</title>
+    <link rel="stylesheet" href="style.css" class="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <h1>HTML and CSS Reference Guide</h1>
+    </div>
+    <div class="container">
+        <h1> What is HTML?</h1>
+        <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages and web applications.
+            It provides the structure and content of a webpage by using a system of tags and attributes.</p>
+
+        <h2> HTML Page Structure</h2>
+        <pre>
+            &lt;!DOCTYPE html&gt; <br>
+            &lt;html lang="en"&gt; <br>
+            &lt;head&gt; <br>
+                &lt;meta charset="UTF-8"&gt; <br>
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; <br>
+                &lt;title&gt;Document&lt;/title&gt; <br> 
+            &lt;/head&gt; <br>
+            &lt;body&gt; <br>
+                
+            &lt;/body&gt; <br> 
+            &lt;/html&gt;
+        </pre>
+    </div>
+    <div class="container">
+        <h1>Basic HTML Guide</h1>
+        <h2>HTML Headings</h2>
+        <p>
+            In HTML, there are six levels of headings, from &lt;h1&gt; to &lt;h6&gt;, where &lt;h1&gt; represents the
+            highest level of heading and &lt;h6&gt; the lowest. The choice of heading level depends on the importance
+            and hierarchy of the content.
+        </p>
+        <div class="boxwrapper">
+            <h1>Heading 1</h1>
+            <pre>
+                &lt;h1&gt; Header 1 &lt;/h1&gt;
+            </pre>
+            <h2>Heading 2</h2>
+            <pre>
+                &lt;h2&gt; Header 2 &lt;/h2&gt;
+            </pre>
+            <h3>Heading 3</h3>
+            <pre>
+                &lt;h3&gt; Header 3 &lt;/h3&gt;
+            </pre>
+            <h4>Heading 4</h4>
+            <pre>
+                &lt;h4&gt; Header 4 &lt;/h4&gt;
+            </pre>
+            <h5>Heading 5</h5>
+            <pre>
+                &lt;h5&gt; Header 5 &lt;/h5&gt;
+            </pre>
+            <h6>Heading 6</h6>
+            <pre>
+                &lt;h6&gt; Header 6 &lt;/h6&gt;
+            </pre>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Paragraphs</h2>
+        <p>
+            &lt;p&gt; (short for "paragraph") is a markup tag used to define a paragraph of text. It is one of the
+            fundamental block-level elements in HTML used for structuring textual content. Paragraphs are typically used
+            to group together sentences or related content to form coherent blocks of text.
+        </p>
+        <div class="boxwrapper">
+            <pre>
+                &lt;p&gt; Lorem ipsum dolor sit amet consectetur adipisicing elit. &lt;/p&gt;
+            </pre>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Line Break</h2>
+        <p>
+            The &lt;br&gt; tag in HTML stands for "line break." It is a self-closing tag used to create a line break
+            within text content. When the browser encounters a &lt;br&gt; tag, it inserts a line break, causing the text
+            following the tag to start on a new line.
+        </p>
+        <div class="boxwrapper">
+            <pre>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. &lt;br&gt;<br>                New line starts here!
+            </pre>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Div Tag</h2>
+        <p>
+            The div tag, &lt;div&gt;, is an HTML element used to create a division or a section in a webpage. It's a generic container that
+            allows you to group together other HTML elements and apply styles or scripts to them as a unit.
+            </p>
+            <div class="boxwrapper">
+            <pre>
+                &lt;div id="header"&gt;
+                &lt;h1&gt;Welcome to my website&lt;/h1&gt;
+                &lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+                &lt;img src="example.jpg" alt="Example Image"&gt;
+                &lt;/div&gt;
+            </pre>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Anchor Tag</h2>
+            <p>
+                &lt;a&gt; tag is an HTML element used to create hyperlinks within a webpage. It allows you to link to
+                other web pages, files, locations within the same page, or even to different parts of the same document.
+            </p>
+            <div class="boxwrapper">
+            <pre>
+                &lt;a&gt; href="https://www.example.com">Visit Example Website&lt;/a&gt;
+            </pre>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Image Tag</h2>
+            <p>
+                The image tag, &lt;img&gt;, is an HTML element used to embed images into a webpage. It allows you to
+                display images from various sources, including local files or remote URLs.
+            </p>
+            <div class="boxwrapper">
+                <pre>
+                &lt;img src="example.jpg" alt="Example Image"&gt;
+                </pre>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Span</h2>
+            <p>
+                &lt;span&gt;, is an HTML element used to apply styles or scripts to a specific section of text within a larger block of content. Unlike the div tag, which creates a block-level element, the span tag is an inline element, meaning it does not create a line break before or after the element.
+            </p>
+            <div class="boxwrapper">
+                <pre>
+                    &lt;span&gt;Text to be styled or scripted&lt;/span&gt;
+                </pre>
+            </div>
+        </div>
+        <div class="container">
+            <h2>HTML Lists</h2>
+            <p>
+                Unordered Lists &lt;ul&gt;, is an HTML element used to create an unordered list. This displays a bullet before each entry on the list. The list items must use the &lt;li&gt; tag.
+            </p>
+            <div class="boxwrapper">
+                <pre>
+                    &lt;ul&gt;
+                        &lt;li&gt;item 1&lt;/li&gt;
+                        &lt;li&gt;item 2&lt;/li&gt;
+                        &lt;li&gt;item 3&lt;/li&gt;
+                    &lt;/ul&gt;
+                </pre>
+            </div>
+            <p>
+                Ordered Lists &lt;ol&gt;, is an HTML element used to create an ordered list. This displays a numbering or numeric value before each entry on the list. The list items must use the &lt;li&gt; tag.
+            </p>
+            <div class="boxwrapper">
+                <pre>
+                    &lt;ol&gt;
+                        &lt;li&gt;item 1&lt;/li&gt;
+                        &lt;li&gt;item 2&lt;/li&gt;
+                        &lt;li&gt;item 3&lt;/li&gt;
+                    &lt;/ol&gt;
+                </pre>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Formatting Tags and Special Characters</h1>
+    
+            <h2>HTML Formatting Tags</h2>
+            <div class="column1">
+                <h2>Element</h2>
+                <pre>
+                    &lt;i&gt;
+                    &lt;u&gt;
+                    &lt;b&gt;
+                    &lt;mark&gt;
+                    &lt;sup&gt;
+                    &lt;sub&gt;
+                    &lt;small&gt;
+                    &lt;del&gt;
+                </pre>
+            </div>
+            <div class="column2">
+                <h2>Definition</h2>
+                <pre>
+                    Italicizes the text.
+                    Underlines the text.
+                    Sets the font weight to bold.
+                    Highlights the text.
+                    Tranforms the text to superscript
+                    Tranforms the text to subscript.
+                    Changes the text to be one size smaller.
+                    Creates a strikethrough.
+                </pre>
+            </div>
+            <div class="column3">
+                <h2>Example</h2>
+                <pre>
+                    <i>This text is italicized.</i>
+                    <u>This text is underlined.</u>
+                    <b>This text is bold.</b>
+                    <mark>This text is marked/highlighted.</mark>
+                    Part of this text is <sup>superscript</sup>
+                    Part of this text is <sub>subscript</sub>
+                    <del>This text is strikethrough/deleted.</del>
+                </pre>
+            </div>
+            <div class="row">
+                <h2>Special Characters</h2>
+                <div class="column4">
+                    <h2>Characters</h2>
+                    <pre>
+                        &amp;
+                        &copy;
+                        &lt;
+                        &gt;
+                        &nbsp; (Creates empty space)
+                    </pre>
+                </div>
+                <div class="column5">
+                    <h2>Code</h2>
+                    <pre>
+                        &#38;amp;
+                        &#38;copy;
+                        &#38;lt;
+                        &#38;gt;
+                        &#38;nbsp;
+                    </pre>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

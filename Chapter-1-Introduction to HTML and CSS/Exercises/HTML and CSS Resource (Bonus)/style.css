@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    margin:0 2%;
+    margin:0 1.5%;
     padding:0;
 }
 
@@ -83,17 +83,17 @@ body {
 .flex {
     display: flex;
     justify-content: space-between;
-    margin: 2%;
+    margin: 1%;
 }
 
 .flex > div {
-    flex-basis: calc(33.33% - 10px);
+    flex-basis: calc(33.33% - 5px);
     border: 5px solid palevioletred;
 }
 
 .flex h2 {
     background-color: palegoldenrod;
-    padding: 20px;
+    padding: 15px;
     color: palevioletred;
     border: 2px solid lightpink;
 }

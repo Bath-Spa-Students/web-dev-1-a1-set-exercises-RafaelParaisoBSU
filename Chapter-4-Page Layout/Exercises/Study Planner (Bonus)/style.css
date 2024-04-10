@@ -1,260 +1,464 @@
-    * {
-        box-sizing: border-box;
-        margin: 0%;
-        padding: 0;
-    }
+/* ---Glossary--- */
 
-    body {
-        font-family:'Lato', sans-serif;
-    }
+/* ---Text Related Styling--- */
+/* font-family: Specifies which font or fonts to be used. */
+/* font-size: Changes the font size. */
+/* font-weight: Specifies a text's character thickness. */
+/* text-decoration: Defines whether text can have any decoration, e.g. underlines. */
+/* text-align: Adjusts the text's horizontal alignment, can be justified, centered, left, or right. */
+/* text-shadow: Used to give the text a shadow. */
 
-    .header h1{
-        text-align: center;
-        padding: 1.5% 1.5%;
-        color: white;
-        overflow: hidden;
-        font-size: 86px;
-        font-weight:bolder;
-        text-shadow: 0px 0px 10px black;
-        border: 2px solid black;
-        box-shadow: black;
-        -webkit-text-stroke: 2px rgb(199, 196, 243);
-        background-color: rgb(128, 89, 160);
-    }
+/* ---Padding and Margin--- */
+/* padding: Used to change an element's inner padding. */
+/* margin: Used to change the area surrounding an element. */
 
-    .navbar{
-        text-align: center;
-        padding: 1% 1%;
-        background: rgb(45, 35, 54);
-    }
+/* ---Color-Related Styling--- */
+/* color: Used to sets the text's color. */
+/* background-color: Adjusts an element's background color. */
 
-    .navbar a{
-        text-align: center;
-        padding: 0.5% 0.5%;
-        color: white;
-        margin: 2% 2%;
-        text-decoration: none;
-        font-size: 24px;
-        font-weight: bolder;
-        text-shadow: 0px 0px 10px black;
-    }
+/* ---Border Styling--- */
+/* border: Creates a border surrounding the element. */
+/* border-radius: Rounds off the corners of the border. */
+/* box-shadow: Using this produces shadows surrounding the border of the element. */
 
-    .navbar a:hover{
-        color: rgb(228, 151, 107);
-        -webkit-text-stroke: 0.5px rgb(228, 151, 107);
-        text-shadow: 0 0 10px rgb(228, 151, 107);
-        transform: scale(110%);
-        transition: 0.25s ease-in-out;
-    }
+/* ---Box Model--- */
+/* display: Used to how an element will appear on screen. */
+/* width: This determines an element's width. */
+/* max-width: This sets the maximum width for an element. */
+/* height: This determines an element's height. */
+/* overflow: Defines what happens when content overflows an element's box to the brim. */
+/* box-sizing: This defines how an element's height and width are assigned. */
 
-    .Modules {
-        display: flex;
-        justify-content: space-between;
-        margin: 2%;
-    }
+/* ---Flexbox Styling--- */
+/* justify-content: This sets flex elements to align with the flex container's main axis. */
+/* flex-basis: Specifies the initial main size of a flex item. */
+/* transition: This indicates how CSS properties will transition. */
 
-    .Modules a {
-        text-align: center;
-        flex-basis: calc(33% - 10px);
-        padding: 1%;
-        border: 1px solid darkgrey;
-        font-size: 28px;
-        color: rgb(255, 243, 243);
-        text-decoration: none;
-        border-radius: 1rem; 
-        font-weight: bolder;
-        transition: transform 0.25s ease;
-        background-color: rgb(128, 89, 160);
-        text-shadow: 0 0 10px rgb(228, 151, 107);
-    }
-
-    .Modules a:hover {
-        transform: scale(1.05);
-        background-color: rgb(228, 151, 107);
-        overflow:hidden;
-    }
-
-    .WebDev {
-        text-align: center;
-        font-size: 32px;
-        background-color: rgb(45, 35, 54);
-        color: white;
-        padding: 2%;
-        margin: 2% 0;
-        text-shadow: 0 0 10px rgb(199, 196, 243);
-    }
-
-    .overview {
-        margin: 2% 4%;
-        border: 2px solid black;
-        padding: 2% ;
-    }
-
-    .overview h2 {
-        font-size: 36px;
-        text-align: center;
-        margin-bottom: 1%;
-    }
-
-    .overview p {
-        font-size: 20px;
-        text-align: justify;
-        margin-top: 1%;
-    }
+/* ---Transitions and Transformations--- */
+/* transform: Allows an element to change such as scaling, rotation, etc. */
 
 
-    .languages {
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-    }
+/* Applying box-sizing property to all elements to include padding and border in the element's total width and height calculation */
+* {
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+    margin: 0%;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+}
 
-    .languages h1{
-        font-size: 36px;
-        font-weight: bolder;
-    }
+/* Setting the font family for the entire document */
+body {
+    font-family: 'Lato', sans-serif;
+    /* Use 'Lato' font family or fallback to sans-serif */
+}
 
-    .languages p{
-        padding: 2%;
-        font-size: 22px;
-        margin: 2% 10%;
-        text-align: justify;
-    }
+/* Styling for the header h1 element */
+.header h1 {
+    text-align: center;
+    /* Center the text horizontally */
+    padding: 1.5% 1.5%;
+    /* Add padding on all sides */
+    color: white;
+    /* Set text color to white */
+    overflow: hidden;
+    /* Hide overflowing content */
+    font-size: 86px;
+    /* Set font size */
+    font-weight: bolder;
+    /* Set font weight to bolder */
+    text-shadow: 0px 0px 10px black;
+    /* Add text shadow */
+    border: 2px solid black;
+    /* Add border with black color */
+    box-shadow: black;
+    /* Add box shadow with black color */
+    -webkit-text-stroke: 2px rgb(199, 196, 243);
+    /* Add text stroke with specified width and color */
+    background-color: rgb(128, 89, 160);
+    /* Set background color with specified RGB value */
+}
 
-    .languages div {
-        margin: 1%;
-        flex-basis: calc(33%);
-        transition: 0.3s ease;  
-        border: 2px solid black;
-    }
+/* Styling for the navbar */
+.navbar {
+    text-align: center;
+    /* Center the text horizontally */
+    padding: 1% 1%;
+    /* Add padding on all sides */
+    background: rgb(45, 35, 54);
+    /* Set background color with specified RGB value */
+}
 
-    .languages div:hover {
-        transform: scale(1.05);
-    }
+/* Styling for links inside navbar */
+.navbar a {
+    text-align: center;
+    /* Center the text horizontally */
+    padding: 0.5% 0.5%;
+    /* Add padding on all sides */
+    color: white;
+    /* Set text color to white */
+    margin: 2% 2%;
+    /* Add margin on all sides */
+    text-decoration: none;
+    /* Remove text decoration */
+    font-size: 24px;
+    /* Set font size */
+    font-weight: bolder;
+    /* Set font weight to bolder */
+    text-shadow: 0px 0px 10px black;
+    /* Add text shadow */
+}
 
-    .helper h1{
-        font-size: 48px;
-        margin: 2% 0;
-        padding: 2%;
-        color: white;
-        text-align: center;
-        text-shadow: 0 0 10px rgb(199, 196, 243);
-        background-color: rgb(45, 35, 54);
-    }
+/* Hover effect for links inside navbar */
+.navbar a:hover {
+    color: rgb(228, 151, 107);
+    /* Change text color on hover */
+    -webkit-text-stroke: 0.5px rgb(228, 151, 107);
+    /* Add text stroke on hover */
+    text-shadow: 0 0 10px rgb(228, 151, 107);
+    /* Add text shadow on hover */
+    transform: scale(110%);
+    /* Scale up on hover */
+    transition: 0.25s ease-in-out;
+    /* Add transition effect */
+}
 
-    .helpheader {
-        text-align: center;
-        background-color: rgb(128, 89, 160);
-        font: 32px;
-        font-weight: bolder;
-        color: white;
-        padding: 2%;
-        margin: 0 6%;
-        border: 2px solid rgb(199, 196, 243);
-        border-radius: 2rem;
-        text-shadow: 0 0 10px rgb(199, 196, 243);
-    }
+/* Styling for Modules class */
+.Modules {
+    display: flex;
+    /* Use flexbox to distribute space between items */
+    justify-content: space-between;
+    /* Distribute space between items */
+    margin: 2%;
+    /* Add margin on all sides */
+}
 
-    .columns {
-        display: flex;
-        justify-content: space-between;
-        margin: 2% 4%;
-    }
-
-    .columns > div {
-        border: 2px solid black;
-    }
-
-    .columns > div:nth-child(1) {
-        flex-basis: calc(30%);
-        display: flex;
-        flex-direction: column;
-        margin: 2%;
-        
-    }
-
-    .columns > div:nth-child(2) {
-        flex-basis: calc(70%);
-        display: flex; 
-        flex-direction: column;
-        margin: 2%;
-        font-weight: bold;
-        background-color: palegoldenrod;
-    }
-
-    .columns div:nth-child(1) h1 {
-        padding: 20px;
-        text-align: center;
-        font-size: 42px;
-        background-color: rgb(128, 89, 160);
-        color: white;
-    }
-
-    .columns div:nth-child(2) h1 {
-        padding: 20px;
-        text-align: center;
-        font-size: 42px;
-        background-color: rgb(128, 89, 160);
-        color: white;
-    }
+/* Styling for links inside Modules class */
+.Modules a {
+    text-align: center;
+    /* Center the text horizontally */
+    flex-basis: calc(33% - 10px);
+    /* Set flex basis with calculation */
+    padding: 1%;
+    /* Add padding on all sides */
+    border: 1px solid darkgrey;
+    /* Add border with specified color */
+    font-size: 28px;
+    /* Set font size */
+    color: rgb(255, 243, 243);
+    /* Set text color with specified RGB value */
+    text-decoration: none;
+    /* Remove text decoration */
+    border-radius: 1rem;
+    /* Add border radius */
+    font-weight: bolder;
+    /* Set font weight to bolder */
+    transition: transform 0.25s ease;
+    /* Add transition effect for transform property */
+    background-color: rgb(128, 89, 160);
+    /* Set background color with specified RGB value */
+    text-shadow: 0 0 10px rgb(228, 151, 107);
+    /* Add text shadow */
+}
 
 
-    .columns div p {
-        margin: 2% 2%;
-        text-align: justify;
-        font-size: 20px;
-    }
+/* Hover effect for links inside Modules class */
+.Modules a:hover {
+    transform: scale(1.05);
+    /* Scale up on hover */
+    background-color: rgb(228, 151, 107);
+    /* Change background color on hover */
+    overflow: hidden;
+    /* Hide overflow on hover */
+}
 
-    .columns div:nth-child(2) p {
-        margin: 2% 2%;
-        text-align: justify;
-        font-size: 20px;
-    }
+/* Styling for WebDev class */
+.WebDev {
+    text-align: center;
+    /* Center the text horizontally */
+    font-size: 32px;
+    /* Set font size */
+    background-color: rgb(45, 35, 54);
+    /* Set background color with specified RGB value */
+    color: white;
+    /* Set text color to white */
+    padding: 2%;
+    /* Add padding on all sides */
+    margin: 2% 0;
+    /* Add margin on top and bottom */
+    text-shadow: 0 0 10px rgb(199, 196, 243);
+    /* Add text shadow */
+}
 
-    .columns div h2 {
-        margin: 4.6% 2%;
-        text-align: justify;
-        font-size: 21px;
-    }
+/* Styling for the overview class */
+.overview {
+    margin: 2% 4%;
+    /* Add margin on top and bottom, and left and right */
+    border: 2px solid black;
+    /* Add border with specified color */
+    padding: 2%;
+    /* Add padding on all sides */
+}
 
-    img {
-        width: 90%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+/* Styling for h2 elements inside overview class */
+.overview h2 {
+    font-size: 36px;
+    /* Set font size */
+    text-align: center;
+    /* Center the text horizontally */
+    margin-bottom: 1%;
+    /* Add margin at the bottom */
+}
 
-    .Lectures h1{
-        padding: 2%;
-        text-align: center;
-        border: 2px solid black;
-        margin: 2% 6%;
-        background-color: rgb(128, 89, 160);
-        border: 2px solid rgb(199, 196, 243);
-        border-radius: 2rem;
-        color: white;
-        text-shadow: 0 0 10px rgb(199, 196, 243);
-    }
+/* Styling for p elements inside overview class */
+.overview p {
+    font-size: 20px;
+    /* Set font size */
+    text-align: justify;
+    /* Justify the text */
+    margin-top: 1%;
+    /* Add margin at the top */
+}
 
-    .Lectures h2{
-        padding: 2%;
-        text-align: justify;
-        border: 2px solid black;
-        margin: 2% 6%;
-        border-radius: 2rem;
-    }   
+/* Styling for the languages class */
+.languages {
+    display: flex;
+    /* Use flexbox to distribute space around items */
+    justify-content: space-around;
+    /* Distribute space around items */
+    text-align: center;
+    /* Center the text horizontally */
+}
 
-    .Lectures hr{
-        width: 100%;
-        margin-top: 2%;
-        margin-bottom: 2%;
-    }   
+/* Styling for h1 elements inside languages class */
+.languages h1 {
+    font-size: 36px;
+    /* Set font size */
+    font-weight: bolder;
+    /* Set font weight to bolder */
+}
 
-    footer {
-        text-align: center;
-        padding: 0.5%;
-        font-size: 24px;
-        background-color: black;
-        color: white;
-        font-weight: bolder;
-    }
+/* Styling for p elements inside languages class */
+.languages p {
+    padding: 2%;
+    /* Add padding on all sides */
+    font-size: 22px;
+    /* Set font size */
+    margin: 2% 10%;
+    /* Add margin on top and bottom, and left and right */
+    text-align: justify;
+    /* Justify the text */
+}
+
+/* Styling for div elements inside languages class */
+.languages div {
+    margin: 1%;
+    /* Add margin on all sides */
+    flex-basis: calc(33%);
+    /* Set flex basis with calculation */
+    transition: 0.3s ease;
+    /* Add transition effect */
+    border: 2px solid black;
+    /* Add border with specified color */
+}
+
+/* Hover effect for div elements inside languages class */
+.languages div:hover {
+    transform: scale(1.05);
+    /* Scale up on hover */
+}
+
+/* Styling for the helper h1 element */
+.helper h1 {
+    font-size: 48px;
+    /* Set font size */
+    margin: 2% 0;
+    /* Add margin on top and bottom */
+    padding: 2%;
+    /* Add padding on all sides */
+    color: white;
+    /* Set text color to white */
+    text-align: center;
+    /* Center the text horizontally */
+    text-shadow: 0 0 10px rgb(199, 196, 243);
+    /* Add text shadow */
+    background-color: rgb(45, 35, 54);
+    /* Set background color with specified RGB value */
+}
+
+/* Styling for the helpheader class */
+.helpheader {
+    text-align: center;
+    /* Center the text horizontally */
+    background-color: rgb(128, 89, 160);
+    /* Set background color with specified RGB value */
+    font: 32px;
+    /* Set font size */
+    font-weight: bolder;
+    /* Set font weight to bolder */
+    color: white;
+    /* Set text color to white */
+    padding: 2%;
+    /* Add padding on all sides */
+    margin: 0 6%;
+    /* Add margin on left and right */
+    border: 2px solid rgb(199, 196, 243);
+    /* Add border with specified color */
+    border-radius: 2rem;
+    /* Add border radius */
+    text-shadow: 0 0 10px rgb(199, 196, 243);
+    /* Add text shadow */
+}
+
+/* Styling for the columns class */
+.columns {
+    display: flex;
+    /* Use flexbox to distribute space between items */
+    justify-content: space-between;
+    /* Distribute space between items */
+    margin: 2% 4%;
+    /* Add margin on top and bottom */
+}
+
+/* Styling for div elements inside columns class */
+.columns>div {
+    border: 2px solid black;
+    /* Add border with specified color */
+}
+
+/* Styling for the first child div inside columns class */
+.columns>div:nth-child(1) {
+    flex-basis: calc(30%);
+    /* Set flex basis with calculation */
+    display: flex;
+    /* Use flexbox to arrange items in a column */
+    flex-direction: column;
+    /* Arrange items in a column */
+    margin: 2%;
+    /* Add margin on all sides */
+}
+
+/* Styling for the second child div inside columns class */
+.columns>div:nth-child(2) {
+    flex-basis: calc(70%);
+    /* Set flex basis with calculation */
+    display: flex;
+    /* Use flexbox to arrange items in a column */
+    flex-direction: column;
+    /* Arrange items in a column */
+    margin: 2%;
+    /* Add margin on all sides */
+    font-weight: bold;
+    /* Set font weight to bold */
+    background-color: palegoldenrod;
+    /* Set background color with specified value */
+}
+
+/* Styling for h1 elements inside divs of columns class */
+.columns div:nth-child(1) h1,
+.columns div:nth-child(2) h1 {
+    padding: 20px;
+    /* Add padding around the text */
+    text-align: center;
+    /* Center the text horizontally */
+    font-size: 42px;
+    /* Set font size */
+    background-color: rgb(128, 89, 160);
+    /* Set background color with specified RGB value */
+    color: white;
+    /* Set text color to white */
+}
+
+/* Styling for p elements inside divs of columns class */
+.columns div p,
+.columns div:nth-child(2) p {
+    margin: 2% 2%;
+    /* Add margin on all sides */
+    text-align: justify;
+    /* Justify the text */
+    font-size: 20px;
+    /* Set font size */
+}
+
+/* Styling for h2 elements inside divs of columns class */
+.columns div h2 {
+    margin: 4.6% 2%;
+    /* Add margin on top and bottom, and left and right */
+    text-align: justify;
+    /* Justify the text */
+    font-size: 21px;
+    /* Set font size */
+}
+
+/* Styling for images */
+img {
+    width: 90%;
+    /* Set width to 90% of the parent container */
+    display: block;
+    /* Center the image horizontally */
+    margin-left: auto;
+    /* Auto margin on the left */
+    margin-right: auto;
+    /* Auto margin on the right */
+}
+
+/* Styling for h1 elements inside Lectures class */
+.Lectures h1 {
+    padding: 2%;
+    /* Add padding on all sides */
+    text-align: center;
+    /* Center the text horizontally */
+    margin: 2% 6%;
+    /* Add margin on top and bottom, and left and right */
+    background-color: rgb(128, 89, 160);
+    /* Set background color with specified RGB value */
+    border: 2px solid rgb(199, 196, 243);
+    /* Add border with specified color */
+    border-radius: 2rem;
+    /* Add border radius */
+    color: white;
+    /* Set text color to white */
+    text-shadow: 0 0 10px rgb(199, 196, 243);
+    /* Add text shadow */
+}
+
+/* Styling for h2 elements inside Lectures class */
+.Lectures h2 {
+    padding: 2%;
+    /* Add padding on all sides */
+    text-align: justify;
+    /* Justify the text */
+    border: 2px solid black;
+    /* Add border with specified color */
+    margin: 2% 6%;
+    /* Add margin on top and bottom, and left and right */
+    border-radius: 2rem;
+    /* Add border radius */
+}
+
+/* Styling for horizontal rule inside Lectures class */
+.Lectures hr {
+    width: 100%;
+    /* Set width to 100% */
+    margin-top: 2%;
+    /* Add margin on top */
+    margin-bottom: 2%;
+    /* Add margin on bottom */
+}
+
+/* Styling for footer */
+footer {
+    text-align: center;
+    /* Center the text horizontally */
+    padding: 0.5%;
+    /* Add padding on all sides */
+    font-size: 24px;
+    /* Set font size */
+    background-color: black;
+    /* Set background color to black */
+    color: white;
+    /* Set text color to white */
+    font-weight: bolder;
+    /* Set font weight to bolder */
+}

@@ -1,3 +1,37 @@
+/* ---Glossary--- */
+
+/* Each property has been defined in the glossary for ease of access for the reader. (I also used it to properly reference my comments.) */
+
+/* ---Box Model--- /
+/ box-sizing: This defines how an element's height and width are assigned. /
+/ border: Specifies the border of an element. */
+
+/* ---Margin and Padding--- /
+/ margin: Used to change the area surrounding an element. */
+
+/* ---Position Styling--- /
+/ position: Indicates how an element is to be positioned. /
+/ Z-index: Using z-index will determine the order of how a positioned element stacks. */
+
+/* ---Text Related Styling--- /
+/ font-family: Specifies which font or fonts to be used. /
+/ font-size: Changes the font size. /
+/ text-align: Aligns the text within an element. /
+/ line-height: Sets the vertical space in the element. /
+/ text-shadow: Applies a shadow effect to text. */
+
+/* ---Background and Border--- /
+/ border-radius: Rounds the corners of an element's border. /
+/ box-shadow: Using this produces shadows surrounding the border of the element. */
+
+/* ---Flexbox Styling--- /
+/ justify-content: This sets flex elements to align with the flex container's main axis. /
+/ align-items: This aligns flex items with the flex container's cross axis. /
+/ flex-wrap: Indicates whether or not flex objects need to be wrapped. */
+
+/* ---Transitions and Transformations--- /
+/ transition: This indicates how CSS properties will transition. */
+
 div {
     display: inline-block;
     /* Sets the display element to inline-block. */

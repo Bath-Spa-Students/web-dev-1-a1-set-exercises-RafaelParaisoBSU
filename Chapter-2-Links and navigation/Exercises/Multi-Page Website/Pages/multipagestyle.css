@@ -58,7 +58,8 @@
 }
 
 /* Header styles */
-h1, h2 {
+h1,
+h2 {
     font-family: 'Bebas Neue', sans-serif;
     /* Specifies the font-family for h1 and h2 elements with a fallback font. */
     display: flex;
@@ -129,7 +130,7 @@ nav {
     /* Adds transition effect on hover. */
     border-radius: 5px;
     /* Adds border radius on hover. */
-    
+
 }
 
 /* Logo styles */

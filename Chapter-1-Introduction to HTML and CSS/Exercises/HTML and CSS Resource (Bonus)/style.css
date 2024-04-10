@@ -1,142 +1,270 @@
+/* ---Glossary--- */
+
+/* Each property has been defined in the glossary for ease of access for the reader. (I also used it to properly reference my comments.) */
+
+/* ---Text Related Styling--- */
+/* font-family: Specifies which font or fonts to be used. */
+/* font-size: Changes the font size. */
+/* font-weight: Specifies a text's character thickness. */
+/* letter-spacing: Used to edit the distance between letters. */
+/* text-decoration: Defines whether text can have any decoration, e.g. underlines. */
+/* text-align: Adjusts the text's horizontal alignment, can be justified, centered, left, or right. */
+/* text-shadow: Used to give the text a shadow. */
+
+/* ---Padding and Margin--- */
+/* padding: Used to change an element's inner padding. */
+/* margin: Used to change the area surrounding an element. */
+
+/* ---Position Styling--- */
+/* position: Indicates how an element is to be positioned. */
+/* z-index: Using z-index will determine the order of how a positioned element stacks. */
+
+/* ---Color-Related Styling--- */
+/* color: Used to sets the text's color. */
+/* background-color: Adjusts an element's background color. */
+
+/* ---Border Styling--- */
+/* border: Creates a border surrounding the element. */
+/* border-radius: Rounds off the corners of the border. */
+/* box-shadow: Using this produces shadows surrounding the border of the element. */
+
+/* ---Box Model--- */
+/* display: Used to how an element will appear on screen. */
+/* width: This determines an element's width. */
+/* max-width: This sets the maximum width for an element. */
+/* height: This determines an element's height. */
+/* overflow: Defines what happens when content overflows an element's box to the brim. */
+/* box-sizing: This defines how an element's height and width are assigned. */
+
+/* ---Flexbox Styling--- */
+/* flex-direction: Flex-direction specifies the direction of the main axis of the flex container. */
+/* justify-content: This sets flex elements to align with the flex container's main axis. */
+/* align-items: This aligns flex items with the flex container's cross axis. */
+/* flex-wrap: Indicates whether or not flex objects need to be wrapped. */
+
+/* ---Transitions and Transformations--- */
+/* transition: This indicates how CSS properties will transition. */
+/* transform: Allows an element to change such as scaling, rotation, etc. */
+
 * {
+    /* Ensures that the specified width and height of an element includes padding and border, but not the margin. */
     box-sizing: border-box;
-    margin:0 1.5%;
-    padding:0;
+    /* Sets margin to 0 on the top and bottom, and 1.5% on the left and right for all elements. */
+    margin: 0 1.5%;
+    /* Sets padding to 0 for all elements, ensuring there is no inner spacing within elements. */
+    padding: 0;
 }
 
 body {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* Specifies the preferred font stack for the body text. */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 .header {
+    /* Aligns the text content to the center within the header element. */
     text-align: center;
+    /* Sets padding to 2% on the top and bottom, and 2% on the left and right within the header element. */
     padding: 2% 2%;
+    /* Sets the background color of the header to palegoldenrod. */
     background-color: palegoldenrod;
+    /* Sets the text color of the header to palevioletred. */
     color: palevioletred;
+    /* Creates an 8px solid border around the header with a color of palevioletred. */
     border: 8px solid palevioletred;
+    /* Adds a shadow effect to the text within the header. */
     text-shadow: 0px 0px 5px goldenrod;
+    /* Sets the font size of the header text to 1.7rem. */
     font-size: 1.7rem;
 }
 
 .container h1 {
+    /* Sets padding to 1.5% on the top and bottom, and 1.5% on the left and right within the h1 element inside the container. */
     padding: 1.5% 1.5%;
+    /* Sets the top margin of the h1 element inside the container to 1%. */
     margin-top: 1%;
+    /* Sets the bottom margin of the h1 element inside the container to 1%. */
     margin-bottom: 1%;
+    /* Aligns the text content to the center within the h1 element inside the container. */
     text-align: center;
+    /* Sets the background color of the h1 element inside the container to lightpink. */
     background-color: lightpink;
+    /* Sets the text color of the h1 element inside the container to white. */
     color: white;
+    /* Adds a shadow effect to the text within the h1 element inside the container. */
     text-shadow: 0px 0px 5px palevioletred;
+    /* Sets the font size of the h1 element inside the container to 3rem. */
     font-size: 3rem;
 }
 
 .container p {
+    /* Sets the font size of paragraphs within the container to 1.3rem. */
     font-size: 1.3rem;
+    /* Sets margin to 2% on the top and bottom, and 2% on the left and right for paragraphs within the container. */
     margin: 2% 2%;
 }
 
 .container h2 {
+    /* Sets the font size of h2 elements within the container to 2.5rem. */
     font-size: 2.5rem;
+    /* Sets margin to 2% on the top and bottom, and 2% on the left and right for h2 elements within the container. */
     margin: 2% 2%;
+    /* Sets the text color of h2 elements within the container to palevioletred. */
     color: palevioletred;
+    /* Sets the font weight of h2 elements within the container to bolder. */
     font-weight: bolder;
 }
 
 .container pre {
+    /* Sets the font size of preformatted text within the container to 1.5rem. */
     font-size: 1.5rem;
+    /* Sets margin to 1.5% on the top and bottom, and 1.5% on the left and right for preformatted text within the container. */
     margin: 1.5% 1.5%;
 }
 
 .boxwrapper {
+    /* Sets margin to 2% on the top and bottom, and 2% on the left and right for the boxwrapper element. */
     margin: 2% 2%;
-    padding:1% 1%;
+    /* Sets padding to 1% on the top and bottom, and 1% on the left and right within the boxwrapper element. */
+    padding: 1% 1%;
+    /* Sets the background color of the boxwrapper element to palegoldenrod. */
     background-color: palegoldenrod;
+    /* Creates a 5px solid border around the boxwrapper element with a color of palevioletred. */
     border: 5px solid palevioletred;
 }
 
 .container1 h1, h2, h3, h4, h5, h6 {
+    /* Aligns the text content to the center for h1, h2, h3, h4, h5, and h6 elements within container1. */
     text-align: center;
+    /* Sets the negative bottom margin of h1, h2, h3, h4, h5, and h6 elements within container1 to -2%. */
     margin-bottom: -2%;
+    /* Sets the negative top margin of h1, h2, h3, h4, h5, and h6 elements within container1 to -1%. */
     margin-top: -1%;
 }
 
-
 .container1 pre {
+    /* Sets the font size of preformatted text within container1 to 1.2rem. */
     font-size: 1.2rem;
+    /* Aligns the text content to the center for preformatted text within container1. */
     text-align: center;
+    /* Sets the negative bottom margin of preformatted text within container1 to -2%. */
     margin-bottom: -2%;
+    /* Sets the bottom padding of preformatted text within container1 to 2%. */
     padding-bottom: 2%;
 }
 
 .boxwrapper1 {
+    /* Sets margin to 2% on the top and bottom, and 2% on the left and right for the boxwrapper1 element. */
     margin: 2% 2%;
+    /* Sets the background color of the boxwrapper1 element to palegoldenrod. */
     background-color: palegoldenrod;
+    /* Creates a 5px solid border around the boxwrapper1 element with a color of palevioletred. */
     border: 5px solid palevioletred;
 }
 
 .header2 {
+    /* Sets the background color of the header2 element to palegoldenrod. */
     background-color: palegoldenrod;
+    /* Sets the padding of the header2 element to 5px. */
     padding: 5px;
+    /* Sets the text color of the header2 element to palevioletred. */
     color: palevioletred;
+    /* Creates a 2px solid border around the header2 element with a color of lightpink. */
     border: 2px solid lightpink;
+    /* This line might be incorrect as negative values are not typically used for border widths. */
+    /* Sets border-bottom to -20px. */
     border-bottom: -20px;
 }
 
 .flex {
+    /* Enables flexbox layout for the flex container. */
     display: flex;
+    /* Aligns the flex items with space-between, distributing the space between the flex items evenly. */
     justify-content: space-between;
+    /* Sets margin to 1% on all sides for the flex container. */
     margin: 1%;
 }
 
 .flex > div {
+    /* Sets the initial main size of the flex items to 33.33% minus 5px. */
     flex-basis: calc(33.33% - 5px);
+    /* Creates a 5px solid border around the flex items with a color of palevioletred. */
     border: 5px solid palevioletred;
 }
 
 .flex h2 {
+    /* Sets the background color of h2 elements within the flex container to palegoldenrod. */
     background-color: palegoldenrod;
+    /* Sets the padding of h2 elements within the flex container to 15px. */
     padding: 15px;
+    /* Sets the text color of h2 elements within the flex container to palevioletred. */
     color: palevioletred;
+    /* Creates a 2px solid border around h2 elements within the flex container with a color of lightpink. */
     border: 2px solid lightpink;
 }
 
 .flex pre {
+    /* Sets the padding of preformatted text within the flex container to 20px. */
     padding: 20px;
+    /* Sets the text color of preformatted text within the flex container to black. */
     color: black;
-    border: 2px solid lightpink;
 }
+
 .row {
+    /* Enables flexbox layout for the row container. */
     display: flex;
+    /* Aligns the content along the main axis with space-between, distributing the space evenly between the flex items. */
     justify-content: space-between;
+    /* Aligns the text content to the center within the row container. */
     text-align: center;
+    /* Sets margin to 2% on all sides for the row container. */
     margin: 2%;
 }
+
 .row > div {
+    /* Sets the initial main size of the flex items to 50% minus 10px. */
     flex-basis: calc(50% - 10px);
+    /* Creates a 5px solid border around the flex items with a color of palevioletred. */
     border: 5px solid palevioletred;
+    /* Sets padding to 20px on all sides for the flex items. */
     padding: 20px;
 }
 
 .row h2 {
+    /* Sets the background color of h2 elements within the row container to palegoldenrod. */
     background-color: palegoldenrod;
+    /* Sets the padding of h2 elements within the row container to 20px. */
     padding: 20px;
+    /* Sets the text color of h2 elements within the row container to palevioletred. */
     color: palevioletred;
+    /* Creates a 2px solid border around h2 elements within the row container with a color of lightpink. */
     border: 2px solid lightpink;
 }
 
 .row pre {
+    /* Sets the padding of preformatted text within the row container to 20px. */
     padding: 20px;
+    /* Sets the text color of preformatted text within the row container to black. */
     color: black;
-    border: 2px solid lightpink;
 }
 
 footer {
+    /* Sets the margin-top of the footer to 10%. */
     margin-top: 10%;
+    /* Sets the bottom edge of the footer to the bottom edge of its containing block, in this case, the bottom of the viewport. */
     bottom: 0%;
+    /* Sets the width of the footer to 100% of its containing block. */
     width: 100%;
+    /* Sets the background color of the footer to blue. */
     background-color: blue;
+    /* Sets the text color of the footer to white. */
     color: white;
+    /* Creates a 5px solid border around the footer with a color of palevioletred. */
     border: 5px solid palevioletred;
+    /* Aligns the text content to the center within the footer. */
     text-align: center;
+    /* Sets padding to 10px on all sides for the footer. */
     padding: 10px;
-    margin: 0;
+    /* Sets the font weight of the footer text to 700. */
     font-weight: 700;
 }
+

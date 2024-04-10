@@ -33,7 +33,7 @@
     /* Removes any default padding. */
 }
 
-header {
+.header {
     background-color: #17072b;
     /* Sets the background color for the header element. */
     padding: 1% 1%;
@@ -42,7 +42,7 @@ header {
     /* Aligns the text within the header element to the center. */
 }
 
-header h1 {
+.header h1 {
     margin-top: 0.5%;
     /* Sets the top margin for the h1 element within the header. */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -57,12 +57,13 @@ header h1 {
     /* Sets the bottom margin for the h1 element within the header. */
 }
 
-body p,
-h2 {
+body {
     font-family: Arial, Helvetica, sans-serif;
     /* Specifies font-family for paragraphs and h2 elements within the body. */
     font-size: 1.9rem;
     /* Sets the font size to 400 for paragraphs and h2 elements within the body. */
+    background-color: white;
+    overflow: hidden;
 }
 
 nav {
@@ -81,101 +82,54 @@ nav a {
     /* Sets the font size for anchor elements within nav. */
 }
 
-main {
-    float: left;
-    /* Floats the main element to the left. */
-    margin-bottom: 5px;
-    /* Sets the bottom margin for the main element. */
-}
-
-main h2 {
-    margin: 1.5% 2%;
-    /* Sets the margins for the h2 element within main. */
-    text-decoration: underline;
-    /* Adds underline to the text of the h2 element within main. */
-    font-size: 3rem;
-    /* Sets the font size for h2 elements within main. */
-    font-weight: bold;
-    /* Sets the font weight to bold for the h2 element within main. */
-}
-
-main p {
-    margin-left: 1.5rem;
-    /* Sets the left margin for paragraphs within main. */
-    text-align: justify;
-    /* Justifies the text alignment for paragraphs within main. */
+.main {
+    margin-top: 1%;
+    /* Sets the top margin for the main content area. */
+    margin-left: 2%;
+    /* Sets the left margin for the main content area. */
+    margin-bottom: 0.25%;
+    /* Sets the bottom margin for the main content area. */
 }
 
 .MainImage {
-    margin: 1% 2%;
-    /* Sets the margins for elements with the class MainImage. */
-    width: 100%;
-    /* Sets the width1for elements with the class MainImage. */
+    margin-top: 1%;
+    /* Sets the top margin for the main image. */
+    width: 67%;
+    /* Sets the width of the main image to 67% of its container. */
 }
 
-aside {
-    float: right;
-    /* Floats the aside element to the right. */
+.aside {
+    position: absolute;
+    /* Sets the position of the aside element as absolute, meaning it is positioned relative to the nearest positioned ancestor (typically the nearest parent element with a position other than static). */
+    top: 23.4%;
+    /* Sets the distance of the top of the aside element from the top of its containing element to 23.4% of the container's height. */
+    left: 72.7%;
+    /* Sets the distance of the left side of the aside element from the left side of its containing element to 72.7% of the container's width. */
     background-color: #172d67;
     /* Sets the background color for the aside element. */
-    margin-top: 1rem;
-    /* Sets the top margin for the aside element. */
-    padding: 2rem 3.8rem;
-    /* Sets the padding for the aside element. */
-}
-
-aside h2 {
+    padding: 2%;
+    /* Defines the padding for the aside element. */
     color: white;
-    /* Sets the text color of h2 elements within aside to white. */
-    font-weight: bolder;
-    /* Sets the font weight to bolder for h2 elements within aside. */
-    text-decoration: underline;
-    /* Adds underline to the text of h2 elements within aside. */
-    margin-bottom: 3rem;
-    /* Sets the bottom margin for h2 elements within aside. */
-    font-size: 3rem;
-    /* Sets the font size for h2 elements within aside. */
+    /* Sets the text color of the aside element to white. */
 }
 
-aside li {
+.aside li {
+    margin: 10% 4%;
+    /* Sets the margin for list items within the aside element. */
     color: white;
-    /* Sets the text color of list items within aside to white. */
-    font-size: 1.9rem;
-    /* Sets the font size to bolder for list items within aside. */
-    margin-top: 10%;
-    /* Sets the top margin for list items within aside. */
-    font-family: Arial, Helvetica, sans-serif;
-    /* Specifies font-family for list items within aside. */
+    /* Sets the text color of list items within the aside element to white. */
 }
 
-ul {
-    list-style-type: '-';
-    /* Sets the list-style-type to a dash for unordered lists. */
-    margin-left: 2%;
-    /* Sets the right margin for list items within aside. */
-}
-
-.smallimages {
-    margin-top: 23.5%;
-    /* Sets the top margin for elements with the class smallimages. */
-}
 
 footer {
-    font-family: Arial, Helvetica, sans-serif;
-    /* Specifies font-family for the footer element. */
-    position: fixed;
-    /* Fixes the position of the footer element. */
-    bottom: 0;
-    /* Sets the distance from the bottom for the footer element. */
-    width: 100%;
-    /* Sets the width of the footer element to 100%. */
-    padding: 5px;
-    /* Sets the padding for the footer element. */
-    background-color: #8c15e9;
-    /* Sets the background color for the footer element. */
+    bottom: 80%;
+    /* Sets the distance of the footer from the bottom of its containing element to 80% of the container's height. */
+    text-align: center;
+    /* Aligns the text within the footer element to the center. */
     color: white;
     /* Sets the text color of the footer element to white. */
-    text-align: center;
-    /* Centers the text within the footer element. */
-    font-size: 1.3rem;
+    padding: 0.2%;
+    /* Defines the padding for the footer element. */
+    background-color: #8c15e9;
+    /* Sets the background color for the footer element. */
 }

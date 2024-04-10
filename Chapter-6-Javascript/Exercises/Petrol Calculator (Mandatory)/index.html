@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Petrol Calculator</title>
+</head>
+<body>
+    <div class="header"> <!-- Header section -->
+        <h1>Petrol Calculator</h1> <!-- Heading -->
+    </div>
+    <div class="container"> <!-- First container for price input -->
+        <div class="price">
+            <h2> Price of Petrol per Litre </h2> <!-- Subheading -->
+            <input id="price" placeholder="1.72" value="1.72" type="number"> <!-- Input field for petrol price -->
+        </div>
+    </div>
+    <div class="container"> <!-- Second container for litre input -->
+        <div class="litre">
+            <h2> Litre/s </h2> <!-- Subheading -->
+            <input id="litres" placeholder="1" value="1" type="number"> <!-- Input field for litres -->
+        </div>
+    </div>
+    <div class="container1"> <!-- Third container for the calculate button -->
+        <div id="button">
+            <button id="calculateButton">Calculate the Total Cost</button> <!-- Button to calculate total cost -->
+        </div>
+    </div>
+    <div class="container1"> <!-- Fourth container for displaying total cost -->
+        <p> Total Sum of Purchase: </p> <!-- Text label -->
+        <h2 id="totalAmount" ></h2> <!-- Placeholder for displaying total cost -->
+    </div>
+</body>
+</html>

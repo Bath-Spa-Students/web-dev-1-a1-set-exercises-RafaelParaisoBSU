@@ -1,0 +1,206 @@
+/* Apply box-sizing to all elements, reset margin and padding */
+* {
+    box-sizing: border-box;
+    /* Ensure box model includes padding and border */
+    margin: 0;
+    /* Reset margin */
+    padding: 0;
+    /* Reset padding */
+}
+
+/* Body styling */
+body {
+    /* Font family */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+    /* Set background color to black */
+    box-shadow: inset 0px 0px 50px rgb(70, 69, 69);
+    /* Apply inset box shadow effect */
+    height: 100vh;
+    /* Set height to full viewport height */
+    overflow-y: hidden;
+    /* Hide vertical overflow */
+}
+
+/* Header styling */
+.header {
+    padding: 2%;
+    /* Add padding */
+    text-align: center;
+    /* Center align text */
+    color: white;
+    /* Set text color to white */
+    background-color: rgb(88, 88, 88);
+    /* Set background color */
+    font-weight: bolder;
+    /* Set font weight to bolder */
+    font-size: 24px;
+    /* Set font size */
+    text-shadow: 0px 0px 20px goldenrod;
+    /* Apply text shadow effect */
+    box-shadow: inset 0px 0px 20px black;
+    /* Apply inset box shadow effect */
+    border: 2px solid goldenrod;
+    /* Add border */
+}
+
+/* Container styling */
+.container {
+    margin: 2% 2%;
+    /* Add margin */
+    border: 2px solid black;
+    /* Add border */
+    text-align: center;
+    /* Center align text */
+    padding: 0.5%;
+    /* Add padding */
+    color: black;
+    /* Set text color to black */
+}
+
+/* Styling for the price container */
+.price {
+    background-color: rgb(88, 88, 88);
+    /* Set background color */
+    padding: 2%;
+    /* Add padding */
+    font-size: 24px;
+    /* Set font size */
+    box-shadow: inset 0px 0px 20px black;
+    /* Apply inset box shadow effect */
+    border: 5px solid rgb(66, 63, 63);
+    /* Add border */
+    color: white;
+    /* Set text color to white */
+}
+
+/* Styling for the price input */
+.price input {
+    margin-top: 2%;
+    /* Add margin from the top */
+    padding: 1%;
+    /* Add padding */
+    font-size: 24px;
+    /* Set font size */
+    background-color: black;
+    /* Set background color to black */
+    color: green;
+    /* Set text color to green */
+    font-weight: bolder;
+    /* Set font weight to bolder */
+    
+}
+
+.price input:hover {
+    margin-top: 2%;
+    /* Add margin from the top */
+    padding: 1%;
+    /* Add padding */
+    font-size: 24px;
+    /* Set font size */
+    background-color: black;
+    /* Set background color to black */
+    color: green;
+    /* Set text color to green */
+    font-weight: bolder;
+    /* Set font weight to bolder */
+    border: 2px solid goldenrod;
+    /* Sets a 2px border */
+}
+
+/* Styling for the litre container */
+.litre {
+    background-color: rgb(88, 88, 88);
+    /* Set background color */
+    padding: 2%;
+    /* Add padding */
+    font-size: 24px;
+    /* Set font size */
+    box-shadow: inset 0px 0px 20px black;
+    /* Apply inset box shadow effect */
+    border: 5px solid rgb(66, 63, 63);
+    /* Add border */
+    color: white;
+    /* Set text color to white */
+}
+
+/* Styling for the litre input */
+.litre input {
+    margin-top: 2%;
+    /* Add margin from the top */
+    padding: 1%;
+    /* Add padding */
+    font-size: 24px;
+    /* Set font size */
+    background-color: black;
+    /* Set background color to black */
+    color: green;
+    /* Set text color to green */
+    font-weight: bolder;
+    /* Set font weight to bolder */
+}
+
+.litre input:hover {
+    margin-top: 2%;
+    /* Add margin from the top */
+    padding: 1%;
+    /* Add padding */
+    font-size: 24px;
+    /* Set font size */
+    background-color: black;
+    /* Set background color to black */
+    color: green;
+    /* Set text color to green */
+    font-weight: bolder;
+    /* Set font weight to bolder */
+    border: 2px solid goldenrod;
+    /* Sets a 2px border */
+}
+
+/* Button styling */
+button {
+    width: 300px;
+    /* Set button width */
+    height: 75px;
+    /* Set button height */
+    font-size: 20px;
+    /* Set font size */
+    padding: 1%;
+    /* Add padding */
+    transition: 0.3s ease-in-out;
+    /* Apply transition effect */
+}
+
+/* Hover effect for button */
+button:hover {
+    background-color: red;
+    /* Change background color on hover */
+    color: white;
+    /* Change text color on hover */
+}
+
+/* Styling for the container1 */
+.container1 {
+    margin-bottom: 2%;
+    /* Add margin from the bottom */
+    text-align: center;
+    /* Center align text */
+}
+
+/* Styling for paragraphs */
+p {
+    margin-top: -2%;
+    /* Add negative margin from the top */
+    font-size: 24px;
+    /* Set font size */
+    padding: 0.9%;
+    /* Add padding */
+    color: white;
+    /* Set text color to white */
+}
+
+/* Styling for h2 elements inside container1 */
+.container1 h2 {
+    color: green;
+    /* Set text color to green */
+}

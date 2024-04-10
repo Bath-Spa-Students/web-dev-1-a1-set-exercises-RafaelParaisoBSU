@@ -1,9 +1,11 @@
+/* Apply box-sizing border-box model to all elements, and reset margin and padding */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Set height of body and html to 100%, and align content to center */
 body,
 html {
     height: 100%;
@@ -12,28 +14,47 @@ html {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    /* Hides overflow content */
 }
 
+/* Styling for the background image */
 .bg {
     position: absolute;
+    /* Position relative to nearest positioned ancestor */
     top: 0;
+    /* Position from top of container */
     left: 0;
+    /* Position from left of container */
     z-index: -1;
+    /* Place behind other content */
     background-repeat: no-repeat;
+    /* Prevent background image from repeating */
     max-width: 100%;
+    /* Ensure background image does not exceed container width */
     max-height: 100%;
+    /* Ensure background image does not exceed container height */
 }
 
+/* Styling for the video container */
 .video {
     position: relative;
+    /* Position relative to normal flow */
     display: flex;
+    /* Use flexbox */
     justify-content: center;
+    /* Center content horizontally */
     align-items: center;
+    /* Center content vertically */
     max-width: 1366px;
+    /* Maximum width of video container */
     max-height: 768px;
+    /* Maximum height of video container */
 }
 
+/* Styling for the video element */
 .video video {
     width: 1366px;
+    /* Width of video */
     height: 768px;
+    /* Height of video */
 }

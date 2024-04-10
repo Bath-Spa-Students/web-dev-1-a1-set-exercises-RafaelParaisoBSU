@@ -1,13 +1,277 @@
+/* ---Glossary--- */
+
+/* Each property has been defined in the glossary for ease of access for the reader. (I also used it to properly reference my comments.) */
+
+/* ---Text Related Styling--- */
+/* font-family: Specifies which font or fonts to be used. */
+/* text-align: Adjusts the text's horizontal alignment, can be justified, centered, left, or right. */
+/* text-shadow: Used to give the text a shadow. */
+/* color: Used to sets the text's color. */
+
+/* ---Padding and Margin--- */
+/* margin: Used to change the area surrounding an element. */
+/* padding: Used to change an element's inner padding. */
+
+/* ---Position Styling--- */
+/* position: Indicates how an element is to be positioned. */
+
+/* ---Color-Related Styling--- */
+/* background-color: Adjusts an element's background color. */
+
+/* ---Border Styling--- */
+/* border-radius: Rounds off the corners of the border. */
+/* box-shadow: Using this produces shadows surrounding the border of the element. */
+/* border: Creates a border surrounding the element. */
+
+/* ---Box Model--- */
+/* box-sizing: This defines how an element's height and width are assigned. */
+/* width, height: This determines an element's width and height. */
+/* overflow: Defines what happens when content overflows an element's box to the brim. */
+/* display: Used to how an element will appear on screen. */
+
+/* ---Transitions and Transformations--- */
+/* transform: Allows an element to change such as scaling, rotation, etc. */
+
+/* Universal Styles */
 * {
     box-sizing: border-box;
+    /* Ensure padding and border are included in the element's total width and height */
     margin: 0;
+    /* Reset margin for all elements */
     padding: 0;
+    /* Reset padding for all elements */
 }
 
-.header h1{
-    margin-left: 20%;
+/* Body Styles */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* Set font family for the entire document */
+    overflow: hidden;
+    /* Hide overflow to prevent horizontal scrolling */
+}
+
+/* Background Styles */
+.bg {
+    position: absolute;
+    /* Position the background absolutely */
+    top: 0;
+    /* Align to the top of the viewport */
+    left: 0;
+    /* Align to the left of the viewport */
+    width: 100%;
+    /* Cover the entire viewport width */
+    background-image: url('Images/87c3d1dd-185a-42d1-8c90-f7645ef18a52.jpeg');
+    /* Set background image */
+    background-size: cover;
+    /* Cover the entire background */
+    background-position: center;
+    /* Center the background image */
+    overflow: hidden;
+    /* Hide overflow */
+    z-index: -999;
+    /* Place the background behind other elements */
+}
+
+/* Header Styles */
+.header h1 {
+    margin-top: 3.5%;
+    /* Set top margin */
+    margin-left: 25%;
+    /* Set left margin */
     margin-right: 2%;
+    /* Set right margin */
     text-align: center;
+    /* Center align text */
+    padding: 2%;
+    /* Set padding */
+    background: rgb(238, 174, 202);
+    /* Set background color */
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    /* Apply radial gradient */
+    border-radius: 20px;
+    /* Set border radius */
+    color: white;
+    /* Set text color */
+    text-shadow: 2px 2px 2px orangered;
+    /* Add text shadow */
+    box-shadow: 0px 0px 10px goldenrod;
+    /* Add box shadow */
+    border: solid 5px palevioletred;
+    /* Add border */
+}
+
+/* Container Styles */
+.container {
+    margin-left: 25%;
+    /* Set left margin */
+    margin-right: 2%;
+    /* Set right margin */
+    margin-top: 1%;
+    /* Set top margin */
+    text-align: center;
+    /* Center align text */
     padding: 1%;
-    border: 2px solid red;
+    /* Set padding */
+    display: grid;
+    /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr);
+    /* Define grid columns */
+    gap: 10px;
+    /* Set gap between grid items */
+    text-shadow: 2px 2px 2px orangered;
+    /* Add text shadow */
+}
+
+/* Grid Item Styles */
+.grid-item {
+    padding: 6%;
+    /* Set padding */
+    text-align: center;
+    /* Center align text */
+    background-color: grey;
+    /* Set background color */
+    background: rgb(238, 174, 202);
+    /* Set background color */
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    /* Apply radial gradient */
+    border-radius: 20px;
+    /* Set border radius */
+    color: white;
+    /* Set text color */
+    box-shadow: 0px 0px 5px orangered;
+    /* Add box shadow */
+    border: solid 5px palevioletred;
+    /* Add border */
+}
+
+.grid-item h2 {
+    margin-bottom: 1%;
+}
+
+.grid-item:hover {
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    /* Applies radial gradient */
+    box-shadow: 0px 0px 20px goldenrod;
+    /* Applies a goldenrod box shadow */
+    border: solid 5px goldenrod;
+    /* Applies a goldenrod border when hovering */
+    transform: 1s ease;
+    /* This property specifies a transformation with duration 1 second and ease timing function */
+}
+
+
+
+/* Additional Container Styles */
+.container2 h1 {
+    position: absolute;
+    /* Position absolutely */
+    margin-left: 2%;
+    /* Set left margin */
+    top: 7%;
+    /* Align to the top */
+    padding: 2% 3%;
+    /* Set padding */
+    background: rgb(238, 174, 202);
+    /* Set background color */
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    /* Apply radial gradient */
+    border-radius: 20px;
+    /* Set border radius */
+    color: white;
+    /* Set text color */
+    text-shadow: 2px 2px 2px orangered;
+    /* Add text shadow */
+    box-shadow: 0px 0px 10px goldenrod;
+    /* Add box shadow */
+    border: solid 5px palevioletred;
+    /* Add border */
+}
+
+/* Input Text Styles */
+.inputtext {
+    position: absolute;
+    /* Position absolutely */
+    top: 20%;
+    /* Align to the top */
+}
+
+.inputtext textarea {
+    margin-left: 16.8%;
+    /* Set left margin */
+    margin-top: 30px;
+    /* Set top margin */
+    font-size: 18px;
+    /* Set font size */
+    padding: 2%;
+    /* Set padding */
+    width: 350px;
+    /* Set width */
+    height: 220px;
+    /* Set height */
+    resize: none;
+    /* Disable textarea resizing */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    border-radius: 20px;
+    /* Set border radius */
+}
+
+/* Speech Button Styles */
+.speechbutton button {
+    position: absolute;
+    /* Position absolutely */
+    top: 53%;
+    /* Align to the top */
+    margin-left: 3.2%;
+    /* Set left margin */
+    width: 350px;
+    /* Set width */
+    height: 50px;
+    /* Set height */
+    font-size: 18px;
+    /* Set font size */
+    background: rgb(238, 174, 202);
+    /* Set background color */
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    /* Apply radial gradient */
+    border-radius: 20px;
+    /* Set border radius */
+    color: white;
+    /* Set text color */
+    border: none;
+    /* Remove border */
+    cursor: pointer;
+    /* Set cursor style */
+    text-shadow: 2px 2px 2px orangered;
+    /* Add text shadow */
+    border: solid 5px palevioletred;
+    /* Add border */
+}
+
+/* Hover Styles for Speech Button */
+.speechbutton button:hover {
+    background: rgb(131, 58, 180);
+    /* Change background color on hover */
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    /* Apply linear gradient on hover */
+    box-shadow: 0px 0px 10px goldenrod;
+    /* Add box shadow on hover */
+    border: solid 5px goldenrod;
+    /* Change border color on hover */
+}
+
+/* Note Styles */
+.note {
+    position: absolute;
+    /* Position absolutely */
+    margin-left: 3.2%;
+    /* Set left margin */
+    font-size: 12px;
+    /* Set font size */
+    font-weight: bolder;
+    /* Set font weight */
+    color: white;
+    /* Set text color */
+    top: 48%;
+    /* Align to the top */
 }

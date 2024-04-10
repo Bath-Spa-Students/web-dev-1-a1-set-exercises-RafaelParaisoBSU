@@ -1,7 +1,7 @@
 // This function runs when the window finishes loading
 window.onload = () => {
-    // Set the initial value of the litres input field to 1.72
-    document.querySelector('#litres').value = 1.72;
+    // Set the initial value of the price input field to 1.72
+    document.querySelector('#price').value = 1.72;
 
     // Select the button element with id 'calculateButton'
     const calculateButton = document.querySelector('#calculateButton');
